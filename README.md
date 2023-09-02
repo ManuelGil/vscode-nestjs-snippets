@@ -29,6 +29,10 @@ Snippets for NestJS in VSCode Editor.
 - [custom](./snippets/custom.code-snippets)
 - [testing](./snippets/testing.code-snippets)
 
+## Other Repositories
+
+- [NestJS Essential Extension Pack](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-pack)
+
 ## Changelog
 
 See [CHANGELOG.md](./CHANGELOG.md)

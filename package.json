@@ -2,7 +2,7 @@
   "name": "vscode-nestjs-snippets-extension",
   "displayName": "NestJS Snippets for VSCode Editor",
   "description": "Snippets for NestJS in VSCode Editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "icon.png",
   "license": "MIT",
   "publisher": "imgildev",
@@ -36,13 +36,13 @@
     "typescript",
     "vscode"
   ],
-  "homepage": "https://github.com/ManuelGil/vscode-codeigniter4-snippets",
+  "homepage": "https://github.com/ManuelGil/vscode-nestjs-snippets",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ManuelGil/vscode-codeigniter4-snippets"
+    "url": "https://github.com/ManuelGil/vscode-nestjs-snippets"
   },
   "bugs": {
-    "url": "https://github.com/ManuelGil/vscode-codeigniter4-snippets/issues"
+    "url": "https://github.com/ManuelGil/vscode-nestjs-snippets/issues"
   },
   "contributes": {
     "snippets": [
