@@ -1,6 +1,6 @@
 {
   "name": "vscode-nestjs-snippets",
-  "displayName": "NestJS Snippets for VSCode Editor",
+  "displayName": "Pratics NestJS Snippets for VSCode",
   "description": "Snippets for NestJS in VSCode Editor",
   "version": "1.0.0",
   "icon": "icon.png",
