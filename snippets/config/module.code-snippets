@@ -1,0 +1,14 @@
+{
+  "forRoot ConfigModule": {
+    "prefix": "ConfigModule.forRoot",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["ConfigModule.forRoot({", "  envFilePath: ${1:path}", "  load: [${2:configurations}]", "  validationSchema: ${3:schema}", "  isGlobal: ${4:boolean}", "  ignoreEnvFile: ${5:boolean}", "  ignoreEnvVars: ${6:boolean}", "}),"],
+    "description": "Loads process environment variables depending on the \"ignoreEnvFile\" flag and \"envFilePath\" value. Also, registers custom configurations globally."
+  },
+  "forFeature ConfigModule": {
+    "prefix": "ConfigModule.forFeature",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "ConfigModule.forFeature(${1:config}),",
+    "description": "Loads process environment variables depending on the \"ignoreEnvFile\" flag and \"envFilePath\" value. Also, registers custom configurations globally."
+  }
+}

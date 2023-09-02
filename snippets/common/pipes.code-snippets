@@ -1,0 +1,7 @@
+{
+  "ValidationPipe": {
+    "prefix": "new ValidationPipe",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["new ValidationPipe({", "  whitelist: ${1:boolean},", "  transform: ${2:boolean},", "}),"]
+  }
+}

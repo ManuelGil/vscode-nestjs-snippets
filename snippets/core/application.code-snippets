@@ -1,0 +1,82 @@
+{
+  "setGlobalPrefix Config": {
+    "prefix": "app.setGlobalPrefix",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.setGlobalPrefix('${1:prefix}');"
+  },
+  "getGlobalPrefix Config": {
+    "prefix": "app.getGlobalPrefix",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.getGlobalPrefix();"
+  },
+  "getIoAdapter Config": {
+    "prefix": "app.getIoAdapter",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.getIoAdapter();"
+  },
+  "useGlobalPipes Config": {
+    "prefix": "app.useGlobalPipes",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.useGlobalPipes(${1:pipes});"
+  },
+  "useGlobalFilters Config": {
+    "prefix": "app.useGlobalFilters",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.useGlobalFilters(${1:filters});"
+  },
+  "useGlobalInterceptors Config": {
+    "prefix": "app.useGlobalInterceptors",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.useGlobalInterceptors(${1:interceptors});"
+  },
+  "useGlobalGuards Config": {
+    "prefix": "app.useGlobalGuards",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.useGlobalGuards(${1:guards});"
+  },
+  "getGlobalRequestGuards Config": {
+    "prefix": "app.getGlobalRequestGuards",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.getGlobalRequestGuards();"
+  },
+  "getHttpAdapter Config": {
+    "prefix": "app.getHttpAdapter",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.getHttpAdapter();"
+  },
+  "init Config": {
+    "prefix": "app.init",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.init();"
+  },
+  "connectMicroservice Config": {
+    "prefix": "app.connectMicroservice",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.connectMicroservice<MicroserviceOptions>(${1:microserviceOptions});"
+  },
+  "getHttpServer Config": {
+    "prefix": "app.getHttpServer",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.getHttpServer();"
+  },
+  "useBodyParser Config": {
+    "prefix": "app.useBodyParser",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.useBodyParser(${1:args});"
+  },
+  "enableCors Config": {
+    "prefix": "app.enableCors",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.enableCors(${1:options});"
+  },
+  "listen Config": {
+    "prefix": "app.listen",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.listen(${1:port}, '${2:hostname}');"
+  },
+  "useWebSocketAdapter Config": {
+    "prefix": "app.useWebSocketAdapter",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": "app.useWebSocketAdapter(${1:adapter});"
+  }
+}

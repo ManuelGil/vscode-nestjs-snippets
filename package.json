@@ -1,0 +1,96 @@
+{
+  "name": "vscode-nestjs-snippets",
+  "displayName": "NestJS Snippets for VSCode Editor",
+  "description": "Snippets for NestJS in VSCode Editor",
+  "version": "1.0.0",
+  "icon": "icon.png",
+  "license": "MIT",
+  "publisher": "imgildev",
+  "author": {
+    "name": "Manuel Gil",
+    "url": "https://github.com/ManuelGil"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/manuelgil"
+  },
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "autocomplete-functionality",
+    "autocomplete",
+    "commands",
+    "express",
+    "grammars-utility",
+    "grammars",
+    "javascript",
+    "nestjs",
+    "snippets-collection",
+    "snippets-collections",
+    "snippets-library",
+    "snippets-plugin",
+    "snippets",
+    "typescript",
+    "vscode"
+  ],
+  "homepage": "https://github.com/ManuelGil/vscode-codeigniter4-snippets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ManuelGil/vscode-codeigniter4-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/ManuelGil/vscode-codeigniter4-snippets/issues"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "path": "./snippets/common/interfaces/exceptions.code-snippets"
+      },
+      {
+        "path": "./snippets/common/interfaces/features.code-snippets"
+      },
+      {
+        "path": "./snippets/common/interfaces/modules.code-snippets"
+      },
+      {
+        "path": "./snippets/common/interfaces/websockets.code-snippets"
+      },
+      {
+        "path": "./snippets/common/services/logger.code-snippets"
+      },
+      {
+        "path": "./snippets/common/decorators.code-snippets"
+      },
+      {
+        "path": "./snippets/common/exceptions.code-snippets"
+      },
+      {
+        "path": "./snippets/common/pipes.code-snippets"
+      },
+      {
+        "path": "./snippets/config/module.code-snippets"
+      },
+      {
+        "path": "./snippets/core/application.code-snippets"
+      },
+      {
+        "path": "./snippets/jwt/module.code-snippets"
+      },
+      {
+        "path": "./snippets/jwt/service.code-snippets"
+      },
+      {
+        "path": "./snippets/passport/module.code-snippets"
+      },
+      {
+        "path": "./snippets/custom.code-snippets"
+      },
+      {
+        "path": "./snippets/testing.code-snippets"
+      }
+    ]
+  }
+}

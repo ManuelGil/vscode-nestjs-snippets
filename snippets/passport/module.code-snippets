@@ -1,0 +1,12 @@
+{
+  "register PassportModule": {
+    "prefix": "PassportModule.register",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["PassportModule.register({", "  defaultStrategy: 'jwt',", "}),"]
+  },
+  "registerAsync PassportModule": {
+    "prefix": "PassportModule.registerAsync",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["PassportModule.registerAsync({", "  inject: [ConfigService],", "  useFactory: (configService: ConfigService) => ({", "    defaultStrategy: configService.get('${3:key}'),", "  }),", "}),"]
+  }
+}

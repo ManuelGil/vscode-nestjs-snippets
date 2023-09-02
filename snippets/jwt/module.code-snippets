@@ -1,0 +1,12 @@
+{
+  "register JwtModule": {
+    "prefix": "JwtModule.register",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["JwtModule.register({", "  secret: '${1:string}',", "  global: ${2:boolean},", "}),"]
+  },
+  "registerAsync JwtModule": {
+    "prefix": "JwtModule.registerAsync",
+    "scope": "plaintext,typescript,typescriptreact",
+    "body": ["JwtModule.registerAsync({", "  inject: [ConfigService],", "  global: ${2:boolean},", "  useFactory: (configService: ConfigService) => ({", "    secret: configService.get('${3:key}'),", "  }),", "}),"]
+  }
+}
