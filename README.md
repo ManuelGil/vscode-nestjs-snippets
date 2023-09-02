@@ -2,7 +2,7 @@
 
 # NestJS Snippets for VSCode Editor
 
-[![Latest Release](https://img.shields.io/visual-studio-marketplace/v/imgildev.vscode-nestjs-snippets?style=flat&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets)
+[![Latest Release](https://img.shields.io/visual-studio-marketplace/v/imgildev.vscode-nestjs-snippets-extension?style=flat&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets-extension)
 [![GitHub license](https://img.shields.io/github/license/ManuelGil/vscode-nestjs-snippets)]()
 
 Snippets for NestJS in VSCode Editor.
