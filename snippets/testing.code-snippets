@@ -1,6 +1,6 @@
 {
   "Testing utilities": {
-    "prefix": "testing",
+    "prefix": ["ns_test", "testing"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": ["import { Test } from '@nestjs/testing';", "import { $1Controller } from './$2.controller';", "import { $1Service } from './$2.service';", "", "describe('$1Controller', () => {", "  let $1Controller: $1Controller;", "  let $1Service: $1Service;", "", "  beforeEach(async () => {", "    const moduleRef = await Test.createTestingModule({", "        controllers: [$1Controller],", "        providers: [$1Service],", "      }).compile();", "", "    $1Service = moduleRef.get<$1Service>($1Service);", "    $1Controller = moduleRef.get<$1Controller>($1Controller);", "  });", "", "  describe('findAll', () => {", "    it('should return an array of $1', async () => {", "      const result = ['test'];", "      jest.spyOn($1Service, 'findAll').mockImplementation(() => result);", "", "      expect(await $1Controller.findAll()).toBe(result);", "    });", "  });", "});", ""]
   }

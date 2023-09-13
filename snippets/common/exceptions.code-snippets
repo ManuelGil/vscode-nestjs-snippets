@@ -1,126 +1,126 @@
 {
   "BadGatewayException Exception": {
-    "prefix": "throw BadGatewayException",
+    "prefix": ["ns_throw_bad_gateway_exception", "throw BadGatewayException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new BadGatewayException();",
     "description": "Defines an HTTP exception for *Bad Gateway* type errors."
   },
   "BadRequestException Exception": {
-    "prefix": "throw BadRequestException",
+    "prefix": ["ns_throw_bad_request_exception", "throw BadRequestException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new BadRequestException();",
     "description": "Defines an HTTP exception for *Bad Request* type errors."
   },
   "ConflictException Exception": {
-    "prefix": "throw ConflictException",
+    "prefix": ["ns_throw_conflict_exception", "throw ConflictException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new ConflictException();",
     "description": "Defines an HTTP exception for *Conflict* type errors."
   },
   "ForbiddenException Exception": {
-    "prefix": "throw ForbiddenException",
+    "prefix": ["ns_throw_forbidden_exception", "throw ForbiddenException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new ForbiddenException();",
     "description": "Defines an HTTP exception for *Forbidden* type errors."
   },
   "GatewayTimeoutException Exception": {
-    "prefix": "throw GatewayTimeoutException",
+    "prefix": ["ns_throw_gateway_timeout_exception", "throw GatewayTimeoutException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new GatewayTimeoutException();",
     "description": "Defines an HTTP exception for *Gateway Timeout* type errors."
   },
   "GoneException Exception": {
-    "prefix": "throw GoneException",
+    "prefix": ["ns_throw_gone_exception", "throw GoneException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new GoneException();",
     "description": "Defines an HTTP exception for *Gone* type errors."
   },
   "HttpVersionNotSupportedException Exception": {
-    "prefix": "throw HttpVersionNotSupportedException",
+    "prefix": ["ns_throw_http_version_not_supported_exception", "throw HttpVersionNotSupportedException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new HttpVersionNotSupportedException();",
     "description": "Defines an HTTP exception for *Http Version Not Supported* type errors."
   },
   "ImATeapotException Exception": {
-    "prefix": "throw ImATeapotException",
+    "prefix": ["ns_throw_im_a_teapot_exception", "throw ImATeapotException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new ImATeapotException();",
     "description": "Defines an HTTP exception for *ImATeapotException* type errors."
   },
   "InternalServerErrorException Exception": {
-    "prefix": "throw InternalServerErrorException",
+    "prefix": ["ns_throw_internal_server_error_exception", "throw InternalServerErrorException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new InternalServerErrorException();",
     "description": "Defines an HTTP exception for *Internal Server Error* type errors."
   },
   "MethodNotAllowedException Exception": {
-    "prefix": "throw MethodNotAllowedException",
+    "prefix": ["ns_throw_method_not_allowed_exception", "throw MethodNotAllowedException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new MethodNotAllowedException();",
     "description": "Defines an HTTP exception for *Method Not Allowed* type errors."
   },
   "MisdirectedException Exception": {
-    "prefix": "throw MisdirectedException",
+    "prefix": ["ns_throw_misdirected_exception", "throw MisdirectedException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new MisdirectedException();",
     "description": "Defines an HTTP exception for *Misdirected* type errors."
   },
   "NotAcceptableException Exception": {
-    "prefix": "throw NotAcceptableException",
+    "prefix": ["ns_throw_not_acceptable_exception", "throw NotAcceptableException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new NotAcceptableException();",
     "description": "Defines an HTTP exception for *Not Acceptable* type errors."
   },
   "NotFoundException Exception": {
-    "prefix": "throw NotFoundException",
+    "prefix": ["ns_throw_not_found_exception", "throw NotFoundException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new NotFoundException();",
     "description": "Defines an HTTP exception for *Not Found* type errors."
   },
   "NotImplementedException Exception": {
-    "prefix": "throw NotImplementedException",
+    "prefix": ["ns_throw_not_implemented_exception", "throw NotImplementedException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new NotImplementedException();",
     "description": "Defines an HTTP exception for *Not Implemented* type errors."
   },
   "PayloadTooLargeException Exception": {
-    "prefix": "throw PayloadTooLargeException",
+    "prefix": ["ns_throw_payload_too_large_exception", "throw PayloadTooLargeException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new PayloadTooLargeException();",
     "description": "Defines an HTTP exception for *Payload Too Large* type errors."
   },
   "PreconditionFailedException Exception": {
-    "prefix": "throw PreconditionFailedException",
+    "prefix": ["ns_throw_precondition_failed_exception", "throw PreconditionFailedException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new PreconditionFailedException();",
     "description": "Defines an HTTP exception for *Precondition Failed* type errors."
   },
   "RequestTimeoutException Exception": {
-    "prefix": "throw RequestTimeoutException",
+    "prefix": ["ns_throw_request_timeout_exception", "throw RequestTimeoutException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new RequestTimeoutException();",
     "description": "Defines an HTTP exception for *Request Timeout* type errors."
   },
   "ServiceUnavailableException Exception": {
-    "prefix": "throw ServiceUnavailableException",
+    "prefix": ["ns_throw_service_unavailable_exception", "throw ServiceUnavailableException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new ServiceUnavailableException();",
     "description": "Defines an HTTP exception for *Service Unavailable* type errors."
   },
   "UnauthorizedException Exception": {
-    "prefix": "throw UnauthorizedException",
+    "prefix": ["ns_throw_unauthorized_exception", "throw UnauthorizedException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new UnauthorizedException();",
     "description": "Defines an HTTP exception for *Unauthorized* type errors."
   },
   "UnprocessableEntityException Exception": {
-    "prefix": "throw UnprocessableEntityException",
+    "prefix": ["ns_throw_unprocessable_entity_exception", "throw UnprocessableEntityException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new UnprocessableEntityException();",
     "description": "Defines an HTTP exception for *Unprocessable Entity* type errors."
   },
   "UnsupportedMediaTypeException Exception": {
-    "prefix": "throw UnsupportedMediaTypeException",
+    "prefix": ["ns_throw_unsupported_media_type_exception", "throw UnsupportedMediaTypeException"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "throw new UnsupportedMediaTypeException();",
     "description": "Defines an HTTP exception for *Unsupported Media Type* type errors."

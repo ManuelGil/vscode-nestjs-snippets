@@ -1,11 +1,11 @@
 {
   "sign JwtService": {
-    "prefix": "JwtService.sign",
+    "prefix": ["ns_jwt_service_sign", "JwtService.sign"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "await this.jwtService.sign(${1:payload}, ${2:options});"
   },
   "signAsync JwtService": {
-    "prefix": "JwtService.signAsync",
+    "prefix": ["ns_jwt_service_sign_async", "JwtService.signAsync"],
     "scope": "plaintext,typescript,typescriptreact",
     "body": "await this.jwtService.signAsync(${1:payload}, ${2:options});"
   }
