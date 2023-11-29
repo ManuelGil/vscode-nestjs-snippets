@@ -11,24 +11,6 @@ Snippets for NestJS in VSCode Editor.
 
 - VSCode 1.46.0 or later
 
-## Features
-
-- [exceptions interfaces](./snippets/common/interfaces/exceptions.code-snippets)
-- [features interfaces](./snippets/common/interfaces/features.code-snippets)
-- [modules interfaces](./snippets/common/interfaces/modules.code-snippets)
-- [websockets interfaces](./snippets/common/interfaces/websockets.code-snippets)
-- [logger services](./snippets/common/services/logger.code-snippets)
-- [decorators](./snippets/common/decorators.code-snippets)
-- [exceptions](./snippets/common/exceptions.code-snippets)
-- [pipes](./snippets/common/pipes.code-snippets)
-- [config module](./snippets/config/module.code-snippets)
-- [application](./snippets/core/application.code-snippets)
-- [jwt module](./snippets/jwt/module.code-snippets)
-- [jwt service](./snippets/jwt/service.code-snippets)
-- [passport module](./snippets/passport/module.code-snippets)
-- [custom](./snippets/custom.code-snippets)
-- [testing](./snippets/testing.code-snippets)
-
 ## Usage
 
 ### Snippets
@@ -139,6 +121,29 @@ Type part of snippet, press `Tab` or `Enter`, and the snippet unfolds. Below is 
 | ns_app_enable_cors | app.enableCors |
 | ns_app_listen | app.listen |
 | ns_app_use_web_socket_adapter | app.useWebSocketAdapter |
+| ns_deco_args_type | @ArgsType |
+| ns_deco_args | @Args |
+| ns_deco_context | @Context |
+| ns_deco_directive | @Directive |
+| ns_deco_extensions | @Extensions |
+| ns_deco_field | @Field |
+| ns_deco_hide_field | @HideField |
+| ns_deco_info | @Info |
+| ns_deco_input_type | @InputType |
+| ns_deco_interface_type | @InterfaceType |
+| ns_deco_mutation | @Mutation |
+| ns_deco_object_type | @ObjectType |
+| ns_deco_query | @Query |
+| ns_deco_resolve_field | @ResolveField |
+| ns_deco_resolve_property | @ResolveProperty |
+| ns_deco_resolve_reference | @ResolveReference |
+| ns_deco_resolver | @Resolver |
+| ns_deco_scalar | @Scalar |
+| ns_deco_subscription | @Subscription |
+| ns_graphql_module_for_root | GraphQLModule.forRoot |
+| ns_graphql_upper_directive_transformer | upperDirectiveTransformer |
+| ns_graphql_transform_schema | transformSchema |
+| ns_graphql_build_schema_options | buildSchemaOptions |
 | ns_jwt_module_register | JwtModule.register |
 | ns_jwt_module_register_async | JwtModule.registerAsync |
 | ns_jwt_service_sign | JwtService.sign |
@@ -148,6 +153,7 @@ Type part of snippet, press `Tab` or `Enter`, and the snippet unfolds. Below is 
 
 ## Other Repositories
 
+- [NestJS File Generator for VSCode](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-generator)
 - [NestJS Essential Extension Pack](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-pack)
 
 ## Changelog

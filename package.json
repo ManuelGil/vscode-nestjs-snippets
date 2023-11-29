@@ -2,7 +2,7 @@
   "name": "vscode-nestjs-snippets-extension",
   "displayName": "NestJS Snippets for VSCode Editor",
   "description": "Snippets for NestJS in VSCode Editor",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "icon": "icon.png",
   "license": "MIT",
   "publisher": "imgildev",
@@ -75,6 +75,12 @@
       },
       {
         "path": "./snippets/core/application.code-snippets"
+      },
+      {
+        "path": "./snippets/graphql/decorators.code-snippets"
+      },
+      {
+        "path": "./snippets/graphql/graphql.code-snippets"
       },
       {
         "path": "./snippets/jwt/module.code-snippets"
