@@ -1,7 +1,15 @@
 {
   "ValidationPipe": {
-    "prefix": ["ns_new_validation_pipe", "new ValidationPipe"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["new ValidationPipe({", "  whitelist: ${1:boolean},", "  transform: ${2:boolean},", "}),"]
+    "prefix": [
+      "ns_new_validation_pipe",
+      "new ValidationPipe"
+    ],
+    "scope": "typescript",
+    "body": [
+      "new ValidationPipe({",
+      "  whitelist: ${1:boolean},",
+      "  transform: ${2:boolean},",
+      "}),"
+    ]
   }
 }

@@ -1,97 +1,211 @@
 {
   "ArgsType decorator": {
-    "prefix": ["ns_deco_args_type", "@ArgsType"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@ArgsType()", "$1"]
+    "prefix": [
+      "ns_deco_args_type",
+      "@ArgsType"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@ArgsType()",
+      "$1"
+    ]
   },
   "Args decorator": {
-    "prefix": ["ns_deco_args", "@Args"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Args('$1')", "$2"]
+    "prefix": [
+      "ns_deco_args",
+      "@Args"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Args('$1')",
+      "$2"
+    ]
   },
   "Context decorator": {
-    "prefix": ["ns_deco_context", "@Context"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Context('$1')", "$2"]
+    "prefix": [
+      "ns_deco_context",
+      "@Context"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Context('$1')",
+      "$2"
+    ]
   },
   "Directive decorator": {
-    "prefix": ["ns_deco_directive", "@Directive"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Directive('$1')", "$2"]
+    "prefix": [
+      "ns_deco_directive",
+      "@Directive"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Directive('$1')",
+      "$2"
+    ]
   },
   "Extensions decorator": {
-    "prefix": ["ns_deco_extensions", "@Extensions"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Extensions($1)", "$2"]
+    "prefix": [
+      "ns_deco_extensions",
+      "@Extensions"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Extensions($1)",
+      "$2"
+    ]
   },
   "Field decorator": {
-    "prefix": ["ns_deco_field", "@Field"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Field($1)", "$2"]
+    "prefix": [
+      "ns_deco_field",
+      "@Field"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Field($1)",
+      "$2"
+    ]
   },
   "HideField decorator": {
-    "prefix": ["ns_deco_hide_field", "@HideField"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@HideField()", "$1"]
+    "prefix": [
+      "ns_deco_hide_field",
+      "@HideField"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@HideField()",
+      "$1"
+    ]
   },
   "Info decorator": {
-    "prefix": ["ns_deco_info", "@Info"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Info('$1')", "$2"]
+    "prefix": [
+      "ns_deco_info",
+      "@Info"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Info('$1')",
+      "$2"
+    ]
   },
   "InputType decorator": {
-    "prefix": ["ns_deco_input_type", "@InputType"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@InputType()", "$1"]
+    "prefix": [
+      "ns_deco_input_type",
+      "@InputType"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@InputType()",
+      "$1"
+    ]
   },
   "InterfaceType decorator": {
-    "prefix": ["ns_deco_interface_type", "@InterfaceType"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@InterfaceType($1)", "$2"]
+    "prefix": [
+      "ns_deco_interface_type",
+      "@InterfaceType"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@InterfaceType($1)",
+      "$2"
+    ]
   },
   "Mutation decorator": {
-    "prefix": ["ns_deco_mutation", "@Mutation"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Mutation('$1')", "$2"]
+    "prefix": [
+      "ns_deco_mutation",
+      "@Mutation"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Mutation('$1')",
+      "$2"
+    ]
   },
   "ObjectType decorator": {
-    "prefix": ["ns_deco_object_type", "@ObjectType"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@ObjectType($1)", "$2"]
+    "prefix": [
+      "ns_deco_object_type",
+      "@ObjectType"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@ObjectType($1)",
+      "$2"
+    ]
   },
   "Query decorator": {
-    "prefix": ["ns_deco_query", "@Query"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Query('$1')", "$2"]
+    "prefix": [
+      "ns_deco_query",
+      "@Query"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Query('$1')",
+      "$2"
+    ]
   },
   "ResolveField decorator": {
-    "prefix": ["ns_deco_resolve_field", "@ResolveField"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@ResolveField($1)", "$2"]
+    "prefix": [
+      "ns_deco_resolve_field",
+      "@ResolveField"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@ResolveField($1)",
+      "$2"
+    ]
   },
   "ResolveProperty decorator": {
-    "prefix": ["ns_deco_resolve_property", "@ResolveProperty"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@ResolveProperty($1)", "$2"]
+    "prefix": [
+      "ns_deco_resolve_property",
+      "@ResolveProperty"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@ResolveProperty($1)",
+      "$2"
+    ]
   },
   "ResolveReference decorator": {
-    "prefix": ["ns_deco_resolve_reference", "@ResolveReference"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@ResolveReference()", "$1"]
+    "prefix": [
+      "ns_deco_resolve_reference",
+      "@ResolveReference"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@ResolveReference()",
+      "$1"
+    ]
   },
   "Resolver decorator": {
-    "prefix": ["ns_deco_resolver", "@Resolver"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Resolver('$1')", "$2"]
+    "prefix": [
+      "ns_deco_resolver",
+      "@Resolver"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Resolver('$1')",
+      "$2"
+    ]
   },
   "Scalar decorator": {
-    "prefix": ["ns_deco_scalar", "@Scalar"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Scalar('$1')", "$2"]
+    "prefix": [
+      "ns_deco_scalar",
+      "@Scalar"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Scalar('$1')",
+      "$2"
+    ]
   },
   "Subscription decorator": {
-    "prefix": ["ns_deco_subscription", "@Subscription"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["@Subscription('$1')", "$2"]
+    "prefix": [
+      "ns_deco_subscription",
+      "@Subscription"
+    ],
+    "scope": "typescript",
+    "body": [
+      "@Subscription('$1')",
+      "$2"
+    ]
   }
 }

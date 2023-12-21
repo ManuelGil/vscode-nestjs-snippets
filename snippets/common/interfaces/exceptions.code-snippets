@@ -1,7 +1,30 @@
 {
   "ExceptionFilter Interface": {
-    "prefix": ["ns_class_exception_filter", "class ExceptionFilter", "implements ExceptionFilter", "ExceptionFilter"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["import { ExceptionFilter, Catch, ArgumentsHost, HttpException } from '@nestjs/common';", "import { Request, Response } from 'express';", "", "@Catch(HttpException)", "export class $1ExceptionFilter implements ExceptionFilter {", "  catch(exception: HttpException, host: ArgumentsHost) {", "    const ctx = host.switchToHttp();", "    const response = ctx.getResponse<Response>();", "    const request = ctx.getRequest<Request>();", "    const status = exception.getStatus();", "", "    response", "      .status(status)", "      .json($0);", "  }", "}", ""]
+    "prefix": [
+      "ns_class_exception_filter",
+      "class ExceptionFilter",
+      "implements ExceptionFilter",
+      "ExceptionFilter"
+    ],
+    "scope": "typescript",
+    "body": [
+      "import { ExceptionFilter, Catch, ArgumentsHost, HttpException } from '@nestjs/common';",
+      "import { Request, Response } from 'express';",
+      "",
+      "@Catch(HttpException)",
+      "export class $1ExceptionFilter implements ExceptionFilter {",
+      "  catch(exception: HttpException, host: ArgumentsHost) {",
+      "    const ctx = host.switchToHttp();",
+      "    const response = ctx.getResponse<Response>();",
+      "    const request = ctx.getRequest<Request>();",
+      "    const status = exception.getStatus();",
+      "",
+      "    response",
+      "      .status(status)",
+      "      .json($0);",
+      "  }",
+      "}",
+      ""
+    ]
   }
 }

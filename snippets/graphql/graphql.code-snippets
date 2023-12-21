@@ -1,22 +1,81 @@
 {
   "setGlobalPrefix Config": {
-    "prefix": ["ns_graphql_module_for_root", "GraphQLModule.forRoot"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["GraphQLModule.forRoot<ApolloDriverConfig>({", "  driver: ApolloDriver,", "  typePaths: ['./**/*.graphql'],", "}),"]
+    "prefix": [
+      "ns_graphql_module_for_root",
+      "GraphQLModule.forRoot"
+    ],
+    "scope": "typescript",
+    "body": [
+      "GraphQLModule.forRoot<ApolloDriverConfig>({",
+      "  driver: ApolloDriver,",
+      "  typePaths: ['./**/*.graphql'],",
+      "}),"
+    ]
   },
   "upperDirectiveTransformer": {
-    "prefix": ["ns_graphql_upper_directive_transformer", "upperDirectiveTransformer"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["import { getDirective, MapperKind, mapSchema } from '@graphql-tools/utils';", "import { defaultFieldResolver, GraphQLSchema } from 'graphql';", "", "export function upperDirectiveTransformer(", "  schema: GraphQLSchema,", "  directiveName: string,", ") {", "  return mapSchema(schema, {", "    [MapperKind.OBJECT_FIELD]: (fieldConfig) => {", "      const upperDirective = getDirective(", "        schema,", "        fieldConfig,", "        directiveName,", "      )?.[0];", "", "      if (upperDirective) {", "        const { resolve = defaultFieldResolver } = fieldConfig;", "", "        // Replace the original resolver with a function that *first* calls", "        // the original resolver, then converts its result to upper case", "        fieldConfig.resolve = async function (source, args, context, info) {", "          const result = await resolve(source, args, context, info);", "          if (typeof result === 'string') {", "            return result.toUpperCase();", "          }", "          return result;", "        };", "        return fieldConfig;", "      }", "    },", "  });", "}"]
+    "prefix": [
+      "ns_graphql_upper_directive_transformer",
+      "upperDirectiveTransformer"
+    ],
+    "scope": "typescript",
+    "body": [
+      "import { getDirective, MapperKind, mapSchema } from '@graphql-tools/utils';",
+      "import { defaultFieldResolver, GraphQLSchema } from 'graphql';",
+      "",
+      "export function upperDirectiveTransformer(",
+      "  schema: GraphQLSchema,",
+      "  directiveName: string,",
+      ") {",
+      "  return mapSchema(schema, {",
+      "    [MapperKind.OBJECT_FIELD]: (fieldConfig) => {",
+      "      const upperDirective = getDirective(",
+      "        schema,",
+      "        fieldConfig,",
+      "        directiveName,",
+      "      )?.[0];",
+      "",
+      "      if (upperDirective) {",
+      "        const { resolve = defaultFieldResolver } = fieldConfig;",
+      "",
+      "        // Replace the original resolver with a function that *first* calls",
+      "        // the original resolver, then converts its result to upper case",
+      "        fieldConfig.resolve = async function (source, args, context, info) {",
+      "          const result = await resolve(source, args, context, info);",
+      "          if (typeof result === 'string') {",
+      "            return result.toUpperCase();",
+      "          }",
+      "          return result;",
+      "        };",
+      "        return fieldConfig;",
+      "      }",
+      "    },",
+      "  });",
+      "}"
+    ]
   },
   "transformSchema": {
-    "prefix": ["ns_graphql_transform_schema", "transformSchema"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_graphql_transform_schema",
+      "transformSchema"
+    ],
+    "scope": "typescript",
     "body": "transformSchema: schema => upperDirectiveTransformer(schema, 'upper'),"
   },
   "buildSchemaOptions": {
-    "prefix": ["ns_graphql_build_schema_options", "buildSchemaOptions"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["buildSchemaOptions: {", "  directives: [", "    new GraphQLDirective({", "      name: 'upper',", "      locations: [DirectiveLocation.FIELD_DEFINITION],", "    }),", "  ],", "},"]
+    "prefix": [
+      "ns_graphql_build_schema_options",
+      "buildSchemaOptions"
+    ],
+    "scope": "typescript",
+    "body": [
+      "buildSchemaOptions: {",
+      "  directives: [",
+      "    new GraphQLDirective({",
+      "      name: 'upper',",
+      "      locations: [DirectiveLocation.FIELD_DEFINITION],",
+      "    }),",
+      "  ],",
+      "},"
+    ]
   },
 }

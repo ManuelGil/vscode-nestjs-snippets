@@ -1,12 +1,31 @@
 {
   "register JwtModule": {
-    "prefix": ["ns_jwt_module_register", "JwtModule.register"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["JwtModule.register({", "  secret: '${1:string}',", "  global: ${2:boolean},", "}),"]
+    "prefix": [
+      "ns_jwt_module_register",
+      "JwtModule.register"
+    ],
+    "scope": "typescript",
+    "body": [
+      "JwtModule.register({",
+      "  secret: '${1:string}',",
+      "  global: ${2:boolean},",
+      "}),"
+    ]
   },
   "registerAsync JwtModule": {
-    "prefix": ["ns_jwt_module_register_async", "JwtModule.registerAsync"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["JwtModule.registerAsync({", "  inject: [ConfigService],", "  global: ${2:boolean},", "  useFactory: (configService: ConfigService) => ({", "    secret: configService.get('${3:key}'),", "  }),", "}),"]
+    "prefix": [
+      "ns_jwt_module_register_async",
+      "JwtModule.registerAsync"
+    ],
+    "scope": "typescript",
+    "body": [
+      "JwtModule.registerAsync({",
+      "  inject: [ConfigService],",
+      "  global: ${2:boolean},",
+      "  useFactory: (configService: ConfigService) => ({",
+      "    secret: configService.get('${3:key}'),",
+      "  }),",
+      "}),"
+    ]
   }
 }

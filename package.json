@@ -2,7 +2,7 @@
   "name": "vscode-nestjs-snippets-extension",
   "displayName": "NestJS Snippets for VSCode Editor",
   "description": "Snippets for NestJS for JavaScript and TypeScript in VSCode editor.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "icon": "icon.png",
   "license": "MIT",
   "publisher": "imgildev",

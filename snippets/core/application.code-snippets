@@ -1,82 +1,130 @@
 {
   "setGlobalPrefix Config": {
-    "prefix": ["ns_app_set_global_prefix", "app.setGlobalPrefix"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_set_global_prefix",
+      "app.setGlobalPrefix"
+    ],
+    "scope": "typescript",
     "body": "app.setGlobalPrefix('${1:prefix}');"
   },
   "getGlobalPrefix Config": {
-    "prefix": ["ns_app_get_global_prefix", "app.getGlobalPrefix"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_get_global_prefix",
+      "app.getGlobalPrefix"
+    ],
+    "scope": "typescript",
     "body": "app.getGlobalPrefix();"
   },
   "getIoAdapter Config": {
-    "prefix": ["ns_app_get_io_adapter", "app.getIoAdapter"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_get_io_adapter",
+      "app.getIoAdapter"
+    ],
+    "scope": "typescript",
     "body": "app.getIoAdapter();"
   },
   "useGlobalPipes Config": {
-    "prefix": ["ns_app_use_global_pipes", "app.useGlobalPipes"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_use_global_pipes",
+      "app.useGlobalPipes"
+    ],
+    "scope": "typescript",
     "body": "app.useGlobalPipes(${1:pipes});"
   },
   "useGlobalFilters Config": {
-    "prefix": ["ns_app_use_global_filters", "app.useGlobalFilters"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_use_global_filters",
+      "app.useGlobalFilters"
+    ],
+    "scope": "typescript",
     "body": "app.useGlobalFilters(${1:filters});"
   },
   "useGlobalInterceptors Config": {
-    "prefix": ["ns_app_use_global_interceptors", "app.useGlobalInterceptors"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_use_global_interceptors",
+      "app.useGlobalInterceptors"
+    ],
+    "scope": "typescript",
     "body": "app.useGlobalInterceptors(${1:interceptors});"
   },
   "useGlobalGuards Config": {
-    "prefix": ["ns_app_use_global_guards", "app.useGlobalGuards"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_use_global_guards",
+      "app.useGlobalGuards"
+    ],
+    "scope": "typescript",
     "body": "app.useGlobalGuards(${1:guards});"
   },
   "getGlobalRequestGuards Config": {
-    "prefix": ["ns_app_get_global_request_guards", "app.getGlobalRequestGuards"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_get_global_request_guards",
+      "app.getGlobalRequestGuards"
+    ],
+    "scope": "typescript",
     "body": "app.getGlobalRequestGuards();"
   },
   "getHttpAdapter Config": {
-    "prefix": ["ns_app_get_http_adapter", "app.getHttpAdapter"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_get_http_adapter",
+      "app.getHttpAdapter"
+    ],
+    "scope": "typescript",
     "body": "app.getHttpAdapter();"
   },
   "init Config": {
-    "prefix": ["ns_app_init", "app.init"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_init",
+      "app.init"
+    ],
+    "scope": "typescript",
     "body": "app.init();"
   },
   "connectMicroservice Config": {
-    "prefix": ["ns_app_connect_microservice", "app.connectMicroservice"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_connect_microservice",
+      "app.connectMicroservice"
+    ],
+    "scope": "typescript",
     "body": "app.connectMicroservice<MicroserviceOptions>(${1:microserviceOptions});"
   },
   "getHttpServer Config": {
-    "prefix": ["ns_app_get_http_server", "app.getHttpServer"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_get_http_server",
+      "app.getHttpServer"
+    ],
+    "scope": "typescript",
     "body": "app.getHttpServer();"
   },
   "useBodyParser Config": {
-    "prefix": ["ns_app_use_body_parser", "app.useBodyParser"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_use_body_parser",
+      "app.useBodyParser"
+    ],
+    "scope": "typescript",
     "body": "app.useBodyParser(${1:args});"
   },
   "enableCors Config": {
-    "prefix": ["ns_app_enable_cors", "app.enableCors"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_enable_cors",
+      "app.enableCors"
+    ],
+    "scope": "typescript",
     "body": "app.enableCors(${1:options});"
   },
   "listen Config": {
-    "prefix": ["ns_app_listen", "app.listen"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_listen",
+      "app.listen"
+    ],
+    "scope": "typescript",
     "body": "app.listen(${1:port}, '${2:hostname}');"
   },
   "useWebSocketAdapter Config": {
-    "prefix": ["ns_app_use_web_socket_adapter", "app.useWebSocketAdapter"],
-    "scope": "plaintext,typescript,typescriptreact",
+    "prefix": [
+      "ns_app_use_web_socket_adapter",
+      "app.useWebSocketAdapter"
+    ],
+    "scope": "typescript",
     "body": "app.useWebSocketAdapter(${1:adapter});"
   }
 }

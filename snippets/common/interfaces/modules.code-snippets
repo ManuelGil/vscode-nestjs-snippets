@@ -1,7 +1,23 @@
 {
   "NestModule Interface": {
-    "prefix": ["ns_class_middleware", "class Middleware", "implements NestModule"],
-    "scope": "plaintext,typescript,typescriptreact",
-    "body": ["import { Injectable, NestMiddleware } from '@nestjs/common';", "import { Request, Response, NextFunction } from 'express';", "", "@Injectable()", "export class $1Middleware implements NestMiddleware {", "  use(req: Request, res: Response, next: NextFunction) {", "    console.log('Request...');", "    next();", "  }", "}", ""]
+    "prefix": [
+      "ns_class_middleware",
+      "class Middleware",
+      "implements NestModule"
+    ],
+    "scope": "typescript",
+    "body": [
+      "import { Injectable, NestMiddleware } from '@nestjs/common';",
+      "import { Request, Response, NextFunction } from 'express';",
+      "",
+      "@Injectable()",
+      "export class $1Middleware implements NestMiddleware {",
+      "  use(req: Request, res: Response, next: NextFunction) {",
+      "    console.log('Request...');",
+      "    next();",
+      "  }",
+      "}",
+      ""
+    ]
   }
 }
