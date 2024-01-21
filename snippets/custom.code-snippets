@@ -1,298 +1,82 @@
 {
   "Controller": {
-    "prefix": [
-      "ns_class_controller",
-      "class Controller"
-    ],
+    "prefix": ["ns_class_controller", "class Controller"],
     "scope": "typescript",
-    "body": [
-      "import {",
-      "  Body,",
-      "  Controller,",
-      "  Delete,",
-      "  Get,",
-      "  Param,",
-      "  Patch,",
-      "  Post,",
-      "} from '@nestjs/common';",
-      "import { Create$1Dto } from './dto/create-$2.dto';",
-      "import { Update$1Dto } from './dto/update-$2.dto';",
-      "import { $1sService } from './$2s.service';",
-      "",
-      "@Controller('$2s')",
-      "export class $1sController {",
-      "  constructor(private readonly $2sService: $1sService) {}",
-      "",
-      "  @Post()",
-      "  create(@Body() create$1Dto: Create$1Dto) {",
-      "    return this.$2sService.create(create$1Dto);",
-      "  }",
-      "",
-      "  @Get()",
-      "  findAll() {",
-      "    return this.$2sService.findAll();",
-      "  }",
-      "",
-      "  @Get(':id')",
-      "  findOne(@Param('id') id: string) {",
-      "    return this.$2sService.findOne(+id);",
-      "  }",
-      "",
-      "  @Patch(':id')",
-      "  update(@Param('id') id: string, @Body() update$1Dto: Update$1Dto) {",
-      "    return this.$2sService.update(+id, update$1Dto);",
-      "  }",
-      "",
-      "  @Delete(':id')",
-      "  remove(@Param('id') id: string) {",
-      "    return this.$2sService.remove(+id);",
-      "  }",
-      "}",
-      ""
-    ]
+    "body": ["import {", "  Body,", "  Controller,", "  Delete,", "  Get,", "  Param,", "  Patch,", "  Post,", "} from '@nestjs/common';", "import { Create$1Dto } from './dto/create-$2.dto';", "import { Update$1Dto } from './dto/update-$2.dto';", "import { $1sService } from './$2s.service';", "", "@Controller('$2s')", "export class $1sController {", "  constructor(private readonly $2sService: $1sService) {}", "", "  @Post()", "  create(@Body() create$1Dto: Create$1Dto) {", "    return this.$2sService.create(create$1Dto);", "  }", "", "  @Get()", "  findAll() {", "    return this.$2sService.findAll();", "  }", "", "  @Get(':id')", "  findOne(@Param('id') id: string) {", "    return this.$2sService.findOne(+id);", "  }", "", "  @Patch(':id')", "  update(@Param('id') id: string, @Body() update$1Dto: Update$1Dto) {", "    return this.$2sService.update(+id, update$1Dto);", "  }", "", "  @Delete(':id')", "  remove(@Param('id') id: string) {", "    return this.$2sService.remove(+id);", "  }", "}", ""]
   },
   "Custom Exception": {
-    "prefix": [
-      "ns_class_exception",
-      "class Exception"
-    ],
+    "prefix": ["ns_class_exception", "class Exception"],
     "scope": "typescript",
-    "body": [
-      "import { HttpException } from '@nestjs/common';",
-      "",
-      "export class $1Exception extends HttpException {",
-      "  constructor() {",
-      "    super('$1Exception', $2);",
-      "  }",
-      "}"
-    ]
+    "body": ["import { HttpException } from '@nestjs/common';", "", "export class $1Exception extends HttpException {", "  constructor() {", "    super('$1Exception', $2);", "  }", "}"]
   },
   "Enum": {
-    "prefix": [
-      "ns_enum",
-      "enum"
-    ],
+    "prefix": ["ns_enum", "enum"],
     "scope": "typescript",
-    "body": [
-      "export enum $1 {",
-      "  $2 = '$2',",
-      "  $3 = '$3',",
-      "  $4 = '$4',",
-      "}"
-    ]
+    "body": ["export enum $1 {", "  $2 = '$2',", "  $3 = '$3',", "  $4 = '$4',", "}"]
   },
   "Create Dto": {
-    "prefix": [
-      "ns_class_create_dto",
-      "class CreateDto"
-    ],
+    "prefix": ["ns_class_create_dto", "class CreateDto"],
     "scope": "typescript",
-    "body": [
-      "export class Create$1Dto {",
-      "  name: string;",
-      "  age: number;",
-      "}",
-      ""
-    ]
+    "body": ["export class Create$1Dto {", "  name: string;", "  age: number;", "}", ""]
   },
   "Update Dto": {
-    "prefix": [
-      "ns_class_update_dto",
-      "class UpdateDto"
-    ],
+    "prefix": ["ns_class_update_dto", "class UpdateDto"],
     "scope": "typescript",
-    "body": [
-      "import { Create$1Dto } from './create-$2.dto';",
-      "",
-      "export class Update$1Dto extends PartialType(Create$1Dto) {",
-      "  name: string;",
-      "  age: number;",
-      "}",
-      ""
-    ]
+    "body": ["import { Create$1Dto } from './create-$2.dto';", "", "export class Update$1Dto extends PartialType(Create$1Dto) {", "  name: string;", "  age: number;", "}", ""]
   },
   "Custom Decorator": {
-    "prefix": [
-      "ns_create_param_decorator",
-      "createParamDecorator"
-    ],
+    "prefix": ["ns_create_param_decorator", "createParamDecorator"],
     "scope": "typescript",
-    "body": [
-      "import { ExecutionContext, createParamDecorator } from '@nestjs/common';",
-      "",
-      "export const $1 = createParamDecorator((data: unknown, ctx: ExecutionContext) => {",
-      "  return $0;",
-      "});"
-    ]
+    "body": ["import { ExecutionContext, createParamDecorator } from '@nestjs/common';", "", "export const $1 = createParamDecorator((data: unknown, ctx: ExecutionContext) => {", "  return $0;", "});"]
   },
   "Module": {
-    "prefix": [
-      "ns_class_module",
-      "class Module"
-    ],
+    "prefix": ["ns_class_module", "class Module"],
     "scope": "typescript",
-    "body": [
-      "import { Module } from '@nestjs/common';",
-      "",
-      "@Module({",
-      "  imports: [],",
-      "  controllers: [],",
-      "  providers: [],",
-      "  exports: []",
-      "})",
-      "export class $1Module {}"
-    ]
+    "body": ["import { Module } from '@nestjs/common';", "", "@Module({", "  imports: [],", "  controllers: [],", "  providers: [],", "  exports: []", "})", "export class $1Module {}"]
   },
   "Dynamic Module": {
-    "prefix": [
-      "ns_class_dynamic_module",
-      "class DynamicModule"
-    ],
+    "prefix": ["ns_class_dynamic_module", "class DynamicModule"],
     "scope": "typescript",
-    "body": [
-      "import { DynamicModule, Module } from '@nestjs/common';",
-      "",
-      "@Module({",
-      "  imports: [],",
-      "  controllers: [],",
-      "  providers: [],",
-      "  exports: []",
-      "})",
-      "export class $1Module {",
-      "  static register(): DynamicModule {",
-      "    return {",
-      "      module: $1Module,",
-      "      imports: [],",
-      "      controllers: [],",
-      "      providers: [],",
-      "      exports: []",
-      "    };",
-      "  }",
-      "}"
-    ]
+    "body": ["import { DynamicModule, Module } from '@nestjs/common';", "", "@Module({", "  imports: [],", "  controllers: [],", "  providers: [],", "  exports: []", "})", "export class $1Module {", "  static register(): DynamicModule {", "    return {", "      module: $1Module,", "      imports: [],", "      controllers: [],", "      providers: [],", "      exports: []", "    };", "  }", "}"]
   },
   "Service": {
-    "prefix": [
-      "ns_class_service",
-      "class Service"
-    ],
+    "prefix": ["ns_class_service", "class Service"],
     "scope": "typescript",
-    "body": [
-      "import { Injectable } from '@nestjs/common';",
-      "import { Create$1Dto } from './dto/create-$2.dto';",
-      "import { Update$1Dto } from './dto/update-$2.dto';",
-      "",
-      "@Injectable()",
-      "export class $1sService {",
-      "  create(create$1Dto: Create$1Dto) {",
-      "    return 'This action adds a new $2';",
-      "  }",
-      "",
-      "  findAll() {",
-      "    return `This action returns all $2s`;",
-      "  }",
-      "",
-      "  findOne(id: number) {",
-      "    return `This action returns a #${id} $2`;",
-      "  }",
-      "",
-      "  update(id: number, update$1Dto: Update$1Dto) {",
-      "    return `This action updates a #${id} $2`;",
-      "  }",
-      "",
-      "  remove(id: number) {",
-      "    return `This action removes a #${id} $2`;",
-      "  }",
-      "}",
-      ""
-    ]
+    "body": ["import { Injectable } from '@nestjs/common';", "import { Create$1Dto } from './dto/create-$2.dto';", "import { Update$1Dto } from './dto/update-$2.dto';", "", "@Injectable()", "export class $1sService {", "  create(create$1Dto: Create$1Dto) {", "    return 'This action adds a new $2';", "  }", "", "  findAll() {", "    return `This action returns all $2s`;", "  }", "", "  findOne(id: number) {", "    return `This action returns a #${id} $2`;", "  }", "", "  update(id: number, update$1Dto: Update$1Dto) {", "    return `This action updates a #${id} $2`;", "  }", "", "  remove(id: number) {", "    return `This action removes a #${id} $2`;", "  }", "}", ""]
   },
   "Jwt Strategy": {
-    "prefix": [
-      "ns_class_jwt_strategy",
-      "class JwtStrategy"
-    ],
+    "prefix": ["ns_class_jwt_strategy", "class JwtStrategy"],
     "scope": "typescript",
-    "body": [
-      "import { Injectable } from '@nestjs/common';",
-      "import { ConfigService } from '@nestjs/config';",
-      "import { PassportStrategy } from '@nestjs/passport';",
-      "import { ExtractJwt, Strategy } from 'passport-jwt';",
-      "",
-      "@Injectable()",
-      "export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {",
-      "  constructor(private configService: ConfigService) {",
-      "    super({",
-      "      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),",
-      "      ignoreExpiration: false,",
-      "      secretOrKey: configService.get('${1:key}'),",
-      "    });",
-      "  }",
-      "",
-      "  async validate(payload: any) {",
-      "    return { userId: payload.sub, username: payload.username };",
-      "  }",
-      "}",
-      ""
-    ]
+    "body": ["import { Injectable } from '@nestjs/common';", "import { ConfigService } from '@nestjs/config';", "import { PassportStrategy } from '@nestjs/passport';", "import { ExtractJwt, Strategy } from 'passport-jwt';", "", "@Injectable()", "export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {", "  constructor(private configService: ConfigService) {", "    super({", "      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),", "      ignoreExpiration: false,", "      secretOrKey: configService.get('${1:key}'),", "    });", "  }", "", "  async validate(payload: any) {", "    return { userId: payload.sub, username: payload.username };", "  }", "}", ""]
   },
   "Custom JwtGuard": {
-    "prefix": [
-      "ns_class_jwt_guard",
-      "class JwtGuard"
-    ],
+    "prefix": ["ns_class_jwt_guard", "class JwtGuard"],
     "scope": "typescript",
-    "body": [
-      "import { Injectable, UnauthorizedException } from '@nestjs/common';",
-      "import { AuthGuard } from '@nestjs/passport';",
-      "",
-      "@Injectable()",
-      "export class $1Guard extends AuthGuard('jwt') {",
-      "  handleRequest(err, user, info) {",
-      "    if (err || !user) {",
-      "      throw err || new UnauthorizedException();",
-      "    }",
-      "    return user;",
-      "  }",
-      "}",
-      ""
-    ]
+    "body": ["import { Injectable, UnauthorizedException } from '@nestjs/common';", "import { AuthGuard } from '@nestjs/passport';", "", "@Injectable()", "export class $1Guard extends AuthGuard('jwt') {", "  handleRequest(err, user, info) {", "    if (err || !user) {", "      throw err || new UnauthorizedException();", "    }", "    return user;", "  }", "}", ""]
   },
   "Custom JwtServide": {
-    "prefix": [
-      "ns_class_jwt_service",
-      "class JwtService"
-    ],
+    "prefix": ["ns_class_jwt_service", "class JwtService"],
     "scope": "typescript",
-    "body": [
-      "import { Injectable, UnauthorizedException } from '@nestjs/common';",
-      "import { JwtService } from '@nestjs/jwt';",
-      "import { compareSync } from 'bcrypt';",
-      "import { UsersService } from '../../users/users.service';",
-      "import { LoginJwtDto } from './dto/login-jwt.dto';",
-      "",
-      "@Injectable()",
-      "export class $1Service {",
-      "  constructor(",
-      "    private readonly usersService: UsersService,",
-      "    private jwtService: JwtService,",
-      "  ) {}",
-      "",
-      "  async login(loginJwtDto: LoginJwtDto): Promise<object> {",
-      "    const { email, password } = loginJwtDto;",
-      "",
-      "    const user = await this.usersService.findOneBy({ email });",
-      "",
-      "    if (!compareSync(password, user.password)) {",
-      "      throw new UnauthorizedException();",
-      "    }",
-      "",
-      "    return await this.jwtService.sign({",
-      "      sub: user.userId,",
-      "    });",
-      "  }",
-      "}",
-      ""
-    ]
+    "body": ["import { Injectable, UnauthorizedException } from '@nestjs/common';", "import { JwtService } from '@nestjs/jwt';", "import { compareSync } from 'bcrypt';", "import { UsersService } from '../../users/users.service';", "import { LoginJwtDto } from './dto/login-jwt.dto';", "", "@Injectable()", "export class $1Service {", "  constructor(", "    private readonly usersService: UsersService,", "    private jwtService: JwtService,", "  ) {}", "", "  async login(loginJwtDto: LoginJwtDto): Promise<object> {", "    const { email, password } = loginJwtDto;", "", "    const user = await this.usersService.findOneBy({ email });", "", "    if (!compareSync(password, user.password)) {", "      throw new UnauthorizedException();", "    }", "", "    return await this.jwtService.sign({", "      sub: user.userId,", "    });", "  }", "}", ""]
+  },
+  "@WebSocketGateway": {
+    "prefix": ["ns_deco_websocket_gateway", "@WebSocketGateway"],
+    "scope": "typescript",
+    "body": "@WebSocketGateway(${1:80}, { $2 })"
+  },
+  "@WebSocketServer()": {
+    "prefix": ["ns_deco_websocket_server", "@WebSocketServer"],
+    "scope": "typescript",
+    "body": ["@WebSocketServer()", "server: Server;"]
+  },
+  "@SubscribeMessage()": {
+    "prefix": ["ns_deco_subscribe_message", "@SubscribeMessage"],
+    "scope": "typescript",
+    "body": ["@SubscribeMessage('$1')", "handleEvent(@MessageBody() data: string): string {", "  return data;", "}"]
+  },
+  "@ConnectedSocket()": {
+    "prefix": ["ns_deco_connected_socket", "@ConnectedSocket"],
+    "scope": "typescript",
+    "body": ["@ConnectedSocket() client: Socket"]
   }
 }

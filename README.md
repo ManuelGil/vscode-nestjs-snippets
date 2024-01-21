@@ -2,6 +2,8 @@
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/imgildev.vscode-nestjs-snippets-extension?style=for-the-badge&label=VS%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets-extension)
 [![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/imgildev.vscode-nestjs-snippets-extension?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets-extension)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/imgildev.vscode-nestjs-snippets-extension?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets-extension)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/imgildev.vscode-nestjs-snippets-extension?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-nestjs-snippets-extension&ssr=false#review-details)
 [![GitHub Repo stars](https://img.shields.io/github/stars/ManuelGil/vscode-nestjs-snippets?style=for-the-badge&logo=github)](https://github.com/ManuelGil/vscode-nestjs-snippets)
 [![GitHub license](https://img.shields.io/github/license/ManuelGil/vscode-nestjs-snippets?style=for-the-badge&logo=github)](https://github.com/ManuelGil/vscode-nestjs-snippets/blob/main/LICENSE)
 
@@ -148,6 +150,10 @@ Type part of snippet, press `Tab` or `Enter`, and the snippet unfolds. Below is 
 | ns_jwt_service_sign_async | JwtService.signAsync |
 | ns_passport_module_register | PassportModule.register |
 | ns_passport_module_register_async | PassportModule.registerAsync |
+| ns_deco_websocket_gateway | @WebSocketGateway |
+| ns_deco_websocket_server | @WebSocketServer |
+| ns_deco_subscribe_message | @SubscribeMessage |
+| ns_deco_connected_socket | @ConnectedSocket |
 
 ## Connect with me
 
