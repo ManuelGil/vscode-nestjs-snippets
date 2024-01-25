@@ -2,7 +2,7 @@
   "name": "vscode-nestjs-snippets-extension",
   "displayName": "NestJS Snippets for VSCode Editor",
   "description": "This extension for Visual Studio Code adds snippets for NestJS Framework in VSCode editor. Now you can create your NestJS applications even faster.",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "icon": "icon.png",
   "license": "MIT",
   "publisher": "imgildev",
@@ -28,6 +28,8 @@
     "extension",
     "grammars-utility",
     "grammars",
+    "graphql",
+    "intellisense",
     "javascript",
     "js",
     "nest",
@@ -45,7 +47,8 @@
     "ts",
     "typescript",
     "vscode-extension",
-    "vscode"
+    "vscode",
+    "websockets"
   ],
   "homepage": "https://github.com/ManuelGil/vscode-nestjs-snippets",
   "repository": {
@@ -65,9 +68,6 @@
       },
       {
         "path": "./snippets/common/interfaces/modules.code-snippets"
-      },
-      {
-        "path": "./snippets/common/interfaces/websockets.code-snippets"
       },
       {
         "path": "./snippets/common/services/logger.code-snippets"
@@ -101,6 +101,12 @@
       },
       {
         "path": "./snippets/passport/module.code-snippets"
+      },
+      {
+        "path": "./snippets/websockets/decorators.code-snippets"
+      },
+      {
+        "path": "./snippets/websockets/interfaces.code-snippets"
       },
       {
         "path": "./snippets/custom.code-snippets"

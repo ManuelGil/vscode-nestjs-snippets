@@ -59,24 +59,4 @@
     "scope": "typescript",
     "body": ["import { Injectable, UnauthorizedException } from '@nestjs/common';", "import { JwtService } from '@nestjs/jwt';", "import { compareSync } from 'bcrypt';", "import { UsersService } from '../../users/users.service';", "import { LoginJwtDto } from './dto/login-jwt.dto';", "", "@Injectable()", "export class $1Service {", "  constructor(", "    private readonly usersService: UsersService,", "    private jwtService: JwtService,", "  ) {}", "", "  async login(loginJwtDto: LoginJwtDto): Promise<object> {", "    const { email, password } = loginJwtDto;", "", "    const user = await this.usersService.findOneBy({ email });", "", "    if (!compareSync(password, user.password)) {", "      throw new UnauthorizedException();", "    }", "", "    return await this.jwtService.sign({", "      sub: user.userId,", "    });", "  }", "}", ""]
   },
-  "@WebSocketGateway": {
-    "prefix": ["ns_deco_websocket_gateway", "@WebSocketGateway"],
-    "scope": "typescript",
-    "body": "@WebSocketGateway(${1:80}, { $2 })"
-  },
-  "@WebSocketServer()": {
-    "prefix": ["ns_deco_websocket_server", "@WebSocketServer"],
-    "scope": "typescript",
-    "body": ["@WebSocketServer()", "server: Server;"]
-  },
-  "@SubscribeMessage()": {
-    "prefix": ["ns_deco_subscribe_message", "@SubscribeMessage"],
-    "scope": "typescript",
-    "body": ["@SubscribeMessage('$1')", "handleEvent(@MessageBody() data: string): string {", "  return data;", "}"]
-  },
-  "@ConnectedSocket()": {
-    "prefix": ["ns_deco_connected_socket", "@ConnectedSocket"],
-    "scope": "typescript",
-    "body": ["@ConnectedSocket() client: Socket"]
-  }
 }

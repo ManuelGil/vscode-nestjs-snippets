@@ -1,29 +1,12 @@
 {
   "register PassportModule": {
-    "prefix": [
-      "ns_passport_module_register",
-      "PassportModule.register"
-    ],
+    "prefix": ["ns_passport_module_register", "PassportModule.register"],
     "scope": "typescript",
-    "body": [
-      "PassportModule.register({",
-      "  defaultStrategy: 'jwt',",
-      "}),"
-    ]
+    "body": ["PassportModule.register({", "  defaultStrategy: 'jwt',", "}),"]
   },
   "registerAsync PassportModule": {
-    "prefix": [
-      "ns_passport_module_register_async",
-      "PassportModule.registerAsync"
-    ],
+    "prefix": ["ns_passport_module_register_async", "PassportModule.registerAsync"],
     "scope": "typescript",
-    "body": [
-      "PassportModule.registerAsync({",
-      "  inject: [ConfigService],",
-      "  useFactory: (configService: ConfigService) => ({",
-      "    defaultStrategy: configService.get('${3:key}'),",
-      "  }),",
-      "}),"
-    ]
+    "body": ["PassportModule.registerAsync({", "  inject: [ConfigService],", "  useFactory: (configService: ConfigService) => ({", "    defaultStrategy: configService.get('${3:key}'),", "  }),", "}),"]
   }
 }

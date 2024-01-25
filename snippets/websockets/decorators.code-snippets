@@ -1,0 +1,22 @@
+{
+  "WebSocketGateway decorator": {
+    "prefix": ["ns_deco_websocket_gateway", "@WebSocketGateway"],
+    "scope": "typescript",
+    "body": "@WebSocketGateway(${1:80}, { $2 })"
+  },
+  "WebSocketServer decorator": {
+    "prefix": ["ns_deco_websocket_server", "@WebSocketServer"],
+    "scope": "typescript",
+    "body": ["@WebSocketServer()", "server: Server;"]
+  },
+  "SubscribeMessage decorator": {
+    "prefix": ["ns_deco_subscribe_message", "@SubscribeMessage"],
+    "scope": "typescript",
+    "body": ["@SubscribeMessage('$1')", "handleEvent(@MessageBody() data: string): string {", "  return data;", "}"]
+  },
+  "ConnectedSocket decorator": {
+    "prefix": ["ns_deco_connected_socket", "@ConnectedSocket"],
+    "scope": "typescript",
+    "body": ["@ConnectedSocket() client: Socket"]
+  }
+}

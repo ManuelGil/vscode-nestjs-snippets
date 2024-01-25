@@ -1,351 +1,230 @@
 {
   "Catch decorator": {
-    "prefix": [
-      "ns_deco_catch",
-      "@Catch"
-    ],
+    "prefix": ["ns_deco_catch", "@Catch"],
     "scope": "typescript",
     "body": "@Catch(${1:exceptions})",
     "description": "Decorator that marks a class as a Nest exception filter. An exception filter handles exceptions thrown by or not handled by your application code."
   },
   "Controller decorator": {
-    "prefix": [
-      "ns_deco_controller",
-      "@Controller"
-    ],
+    "prefix": ["ns_deco_controller", "@Controller"],
     "scope": "typescript",
     "body": "@Controller('${1:prefix}')",
     "description": "Decorator that marks a class as a Nest controller that can receive inbound requests and produce responses."
   },
   "Injectable decorator": {
-    "prefix": [
-      "ns_deco_injectable",
-      "@Injectable"
-    ],
+    "prefix": ["ns_deco_injectable", "@Injectable"],
     "scope": "typescript",
     "body": "@Injectable({1:options})",
     "description": "Decorator that marks a class as a [provider](https://docs.nestjs.com/providers). Providers can be injected into other classes via constructor parameter injection using Nest's built-in [Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection) system."
   },
   "Optional decorator": {
-    "prefix": [
-      "ns_deco_optional",
-      "@Optional"
-    ],
+    "prefix": ["ns_deco_optional", "@Optional"],
     "scope": "typescript",
     "body": "@Optional()",
     "description": "Parameter decorator for an injected dependency marking the dependency as optional."
   },
   "UseGuards decorator": {
-    "prefix": [
-      "ns_deco_use_guards",
-      "@UseGuards"
-    ],
+    "prefix": ["ns_deco_use_guards", "@UseGuards"],
     "scope": "typescript",
     "body": "@UseGuards(${1:guards})",
     "description": "Decorator that binds guards to the scope of the controller or method, depending on its context."
   },
   "UseInterceptors decorator": {
-    "prefix": [
-      "ns_deco_use_interceptors",
-      "@UseInterceptors"
-    ],
+    "prefix": ["ns_deco_use_interceptors", "@UseInterceptors"],
     "scope": "typescript",
     "body": "@UseInterceptors(${1:interceptors})",
     "description": "Decorator that binds interceptors to the scope of the controller or method, depending on its context."
   },
   "UsePipes decorator": {
-    "prefix": [
-      "ns_deco_use_pipes",
-      "@UsePipes"
-    ],
+    "prefix": ["ns_deco_use_pipes", "@UsePipes"],
     "scope": "typescript",
     "body": "@UsePipes(${1:pipes})",
     "description": "Decorator that binds pipes to the scope of the controller or method, depending on its context."
   },
   "Version decorator": {
-    "prefix": [
-      "ns_deco_version",
-      "@Version"
-    ],
+    "prefix": ["ns_deco_version", "@Version"],
     "scope": "typescript",
     "body": "@Version(${1:version})",
     "description": "Sets the version of the endpoint to the passed version."
   },
   "Header decorator": {
-    "prefix": [
-      "ns_deco_header",
-      "@Header"
-    ],
+    "prefix": ["ns_deco_header", "@Header"],
     "scope": "typescript",
     "body": "@Header('${1:name}', '${2:value}')",
     "description": "Request method Decorator.  Sets a response header."
   },
   "HttpCode decorator": {
-    "prefix": [
-      "ns_deco_http_code",
-      "@HttpCode"
-    ],
+    "prefix": ["ns_deco_http_code", "@HttpCode"],
     "scope": "typescript",
     "body": "@HttpCode(${1:statusCode})",
     "description": "Request method Decorator.  Defines the HTTP response status code.  Overrides default status code for the decorated request method."
   },
   "Redirect decorator": {
-    "prefix": [
-      "ns_deco_redirect",
-      "@Redirect"
-    ],
+    "prefix": ["ns_deco_redirect", "@Redirect"],
     "scope": "typescript",
     "body": "@Redirect('${1:url}', ${2:statusCode})",
     "description": "Redirects request to the specified URL."
   },
   "Render decorator": {
-    "prefix": [
-      "ns_deco_render",
-      "@Render"
-    ],
+    "prefix": ["ns_deco_render", "@Render"],
     "scope": "typescript",
     "body": "@Render('${1:template}')",
     "description": "Route handler method Decorator.  Defines a template to be rendered by the controller."
   },
   "Post decorator": {
-    "prefix": [
-      "ns_deco_post",
-      "@Post"
-    ],
+    "prefix": ["ns_deco_post", "@Post"],
     "scope": "typescript",
     "body": "@Post('${1:path}')",
     "description": "Route handler (method) Decorator. Routes HTTP POST requests to the specified path."
   },
   "Get decorator": {
-    "prefix": [
-      "ns_deco_get",
-      "@Get"
-    ],
+    "prefix": ["ns_deco_get", "@Get"],
     "scope": "typescript",
     "body": "@Get('${1:path}')",
     "description": "Route handler (method) Decorator. Routes HTTP GET requests to the specified path."
   },
   "Delete decorator": {
-    "prefix": [
-      "ns_deco_delete",
-      "@Delete"
-    ],
+    "prefix": ["ns_deco_delete", "@Delete"],
     "scope": "typescript",
     "body": "@Delete('${1:path}')",
     "description": "Route handler (method) Decorator. Routes HTTP DELETE requests to the specified path."
   },
   "Put decorator": {
-    "prefix": [
-      "ns_deco_put",
-      "@Put"
-    ],
+    "prefix": ["ns_deco_put", "@Put"],
     "scope": "typescript",
     "body": "@Put('${1:path}')",
     "description": "Route handler (method) Decorator. Routes HTTP PUT requests to the specified path."
   },
   "Patch decorator": {
-    "prefix": [
-      "ns_deco_patch",
-      "@Patch"
-    ],
+    "prefix": ["ns_deco_patch", "@Patch"],
     "scope": "typescript",
     "body": "@Patch('${1:path}')",
     "description": "Route handler (method) Decorator. Routes HTTP PATCH requests to the specified path."
   },
   "Options decorator": {
-    "prefix": [
-      "ns_deco_options",
-      "@Options"
-    ],
+    "prefix": ["ns_deco_options", "@Options"],
     "scope": "typescript",
     "body": "@Options('${1:path}')",
     "description": "Route handler (method) Decorator. Routes HTTP OPTIONS requests to the specified path."
   },
   "Head decorator": {
-    "prefix": [
-      "ns_deco_head",
-      "@Head"
-    ],
+    "prefix": ["ns_deco_head", "@Head"],
     "scope": "typescript",
     "body": "@Head('${1:path}')",
     "description": "Route handler (method) Decorator. Routes HTTP HEAD requests to the specified path."
   },
   "All decorator": {
-    "prefix": [
-      "ns_deco_all",
-      "@All"
-    ],
+    "prefix": ["ns_deco_all", "@All"],
     "scope": "typescript",
     "body": "@All('${1:path}')",
     "description": "Route handler (method) Decorator. Routes all HTTP requests to the specified path."
   },
   "Search decorator": {
-    "prefix": [
-      "ns_deco_search",
-      "@Search"
-    ],
+    "prefix": ["ns_deco_search", "@Search"],
     "scope": "typescript",
     "body": "@Search('${1:path}')",
     "description": "Route handler (method) Decorator. Routes all HTTP requests to the specified path."
   },
   "Request decorator": {
-    "prefix": [
-      "ns_deco_request",
-      "@Request"
-    ],
+    "prefix": ["ns_deco_request", "@Request"],
     "scope": "typescript",
     "body": "@Request()",
     "description": "Route handler parameter decorator. Extracts the `Request` object from the underlying platform and populates the decorated parameter with the value of `Request`."
   },
   "Response decorator": {
-    "prefix": [
-      "ns_deco_response",
-      "@Response"
-    ],
+    "prefix": ["ns_deco_response", "@Response"],
     "scope": "typescript",
     "body": "@Response(${1:options})",
     "description": "Route handler parameter decorator. Extracts the `Response` object from the underlying platform and populates the decorated parameter with the value of `Response`."
   },
   "Next decorator": {
-    "prefix": [
-      "ns_deco_next",
-      "@Next"
-    ],
+    "prefix": ["ns_deco_next", "@Next"],
     "scope": "typescript",
     "body": "@Next()",
     "description": "Route handler parameter decorator. Extracts reference to the `Next` function from the underlying platform and populates the decorated parameter with the value of `Next`."
   },
   "Ip decorator": {
-    "prefix": [
-      "ns_deco_ip",
-      "@Ip"
-    ],
+    "prefix": ["ns_deco_ip", "@Ip"],
     "scope": "typescript",
     "body": "@Ip()",
     "description": "Route handler parameter decorator. Extracts the `Ip` property from the `req` object and populates the decorated parameter with the value of `ip`."
   },
   "Session decorator": {
-    "prefix": [
-      "ns_deco_session",
-      "@Session"
-    ],
+    "prefix": ["ns_deco_session", "@Session"],
     "scope": "typescript",
     "body": "@Session()",
     "description": "Route handler parameter decorator. Extracts the `Session` object from the underlying platform and populates the decorated parameter with the value of `Session`."
   },
   "UploadedFile decorator": {
-    "prefix": [
-      "ns_deco_uploaded_file",
-      "@UploadedFile"
-    ],
+    "prefix": ["ns_deco_uploaded_file", "@UploadedFile"],
     "scope": "typescript",
     "body": "@UploadedFile('${1:fileKey}', ${2:pipes})",
     "description": "Route handler parameter decorator. Extracts the `file` object and populates the decorated parameter with the value of `file`. Used in conjunction with [multer middleware](https://github.com/expressjs/multer) for Express-based applications."
   },
   "UploadedFiles decorator": {
-    "prefix": [
-      "ns_deco_uploaded_files",
-      "@UploadedFiles"
-    ],
+    "prefix": ["ns_deco_uploaded_files", "@UploadedFiles"],
     "scope": "typescript",
     "body": "@UploadedFiles(${1:pipes})",
     "description": "Route handler parameter decorator. Extracts the `files` object and populates the decorated parameter with the value of `files`. Used in conjunction with [multer middleware](https://github.com/expressjs/multer) for Express-based applications."
   },
   "Headers decorator": {
-    "prefix": [
-      "ns_deco_headers",
-      "@Headers"
-    ],
+    "prefix": ["ns_deco_headers", "@Headers"],
     "scope": "typescript",
     "body": "@Headers('${1:property}')",
     "description": "Route handler parameter decorator. Extracts the `headers` property from the `req` object and populates the decorated parameter with the value of `headers`."
   },
   "Query decorator": {
-    "prefix": [
-      "ns_deco_query",
-      "@Query"
-    ],
+    "prefix": ["ns_deco_query", "@Query"],
     "scope": "typescript",
     "body": "@Query('${1:property}', ${2:pipes})",
     "description": "Route handler parameter decorator. Extracts the `query` property from the `req` object and populates the decorated parameter with the value of `query`. May also apply pipes to the bound query parameter."
   },
   "Body decorator": {
-    "prefix": [
-      "ns_deco_body",
-      "@Body"
-    ],
+    "prefix": ["ns_deco_body", "@Body"],
     "scope": "typescript",
     "body": "@Body('${1:property}', ${2:pipes})",
     "description": "Route handler parameter decorator. Extracts the entire `body` object from the `req` object and populates the decorated parameter with the value of `body`."
   },
   "Param decorator": {
-    "prefix": [
-      "ns_deco_param",
-      "@Param"
-    ],
+    "prefix": ["ns_deco_param", "@Param"],
     "scope": "typescript",
     "body": "@Param('${1:property}', ${2:pipes})",
     "description": "Route handler parameter decorator. Extracts the `params` property from the `req` object and populates the decorated parameter with the value of `params`. May also apply pipes to the bound parameter."
   },
   "HostParam decorator": {
-    "prefix": [
-      "ns_deco_host_param",
-      "@HostParam"
-    ],
+    "prefix": ["ns_deco_host_param", "@HostParam"],
     "scope": "typescript",
     "body": "@HostParam('${1:property}')",
     "description": "Route handler parameter decorator. Extracts the `hosts` property from the `req` object and populates the decorated parameter with the value of `hosts`. May also apply pipes to the bound parameter."
   },
   "Req decorator": {
-    "prefix": [
-      "ns_deco_req",
-      "@Req"
-    ],
+    "prefix": ["ns_deco_req", "@Req"],
     "scope": "typescript",
     "body": "@Req()",
     "description": "Route handler parameter decorator. Extracts the `hosts` property from the `req` object and populates the decorated parameter with the value of `hosts`. May also apply pipes to the bound parameter."
   },
   "Res decorator": {
-    "prefix": [
-      "ns_deco_res",
-      "@Res"
-    ],
+    "prefix": ["ns_deco_res", "@Res"],
     "scope": "typescript",
     "body": "@Res(${1:options})",
     "description": "Route handler parameter decorator. Extracts the `hosts` property from the `req` object and populates the decorated parameter with the value of `hosts`. May also apply pipes to the bound parameter."
   },
   "Sse decorator": {
-    "prefix": [
-      "ns_deco_sse",
-      "@Sse"
-    ],
+    "prefix": ["ns_deco_sse", "@Sse"],
     "scope": "typescript",
     "body": "@Sse('${1:path}')",
     "description": "Declares this route as a Server-Sent-Events endpoint."
   },
   "Global decorator": {
-    "prefix": [
-      "ns_deco_global",
-      "@Global"
-    ],
+    "prefix": ["ns_deco_global", "@Global"],
     "scope": "typescript",
     "body": "@Global()",
     "description": "Decorator that makes a module global-scoped."
   },
   "Module decorator": {
-    "prefix": [
-      "ns_deco_module",
-      "@Module"
-    ],
+    "prefix": ["ns_deco_module", "@Module"],
     "scope": "typescript",
-    "body": [
-      "@Module({",
-      "  imports: [],",
-      "  controllers: [],",
-      "  providers: [],",
-      "  exports: [],",
-      "})"
-    ],
+    "body": ["@Module({", "  imports: [],", "  controllers: [],", "  providers: [],", "  exports: [],", "})"],
     "description": "Decorator that marks a class as a [module](https://docs.nestjs.com/modules)."
   }
 }

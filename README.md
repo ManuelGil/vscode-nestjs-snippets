@@ -102,6 +102,10 @@ Type part of snippet, press `Tab` or `Enter`, and the snippet unfolds. Below is 
 | ns_class_pipe | implements PipeTransform |
 | ns_class_middleware | implements NestModule |
 | ns_class_adapter | implements WebSocketAdapter |
+| ns_deco_websocket_gateway | @WebSocketGateway |
+| ns_deco_websocket_server | @WebSocketServer |
+| ns_deco_subscribe_message | @SubscribeMessage |
+| ns_deco_connected_socket | @ConnectedSocket |
 | ns_class_logger | implements LoggerService |
 | ns_config_module_for_root | ConfigModule.forRoot |
 | ns_config_module_for_feature | ConfigModule.forFeature |
@@ -144,16 +148,18 @@ Type part of snippet, press `Tab` or `Enter`, and the snippet unfolds. Below is 
 | ns_graphql_upper_directive_transformer | upperDirectiveTransformer |
 | ns_graphql_transform_schema | transformSchema |
 | ns_graphql_build_schema_options | buildSchemaOptions |
+| ns_graphql_query | query |
+| ns_graphql_mutation | mutation |
+| ns_graphql_subscription | subscription |
+| ns_graphql_fragment | fragment |
+| ns_graphql_type | type |
+| ns_graphql_interface | interface |
 | ns_jwt_module_register | JwtModule.register |
 | ns_jwt_module_register_async | JwtModule.registerAsync |
 | ns_jwt_service_sign | JwtService.sign |
 | ns_jwt_service_sign_async | JwtService.signAsync |
 | ns_passport_module_register | PassportModule.register |
 | ns_passport_module_register_async | PassportModule.registerAsync |
-| ns_deco_websocket_gateway | @WebSocketGateway |
-| ns_deco_websocket_server | @WebSocketServer |
-| ns_deco_subscribe_message | @SubscribeMessage |
-| ns_deco_connected_socket | @ConnectedSocket |
 
 ## Connect with me
 
