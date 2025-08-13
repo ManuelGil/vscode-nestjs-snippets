@@ -2,96 +2,115 @@
   "ArgsType decorator": {
     "prefix": ["ns_deco_args_type", "@ArgsType"],
     "scope": "typescript",
-    "body": ["@ArgsType()", "$1"]
+    "body": ["@ArgsType()", "$1"],
+    "description": "Marks a class as GraphQL ArgsType to group resolver arguments."
   },
   "Args decorator": {
     "prefix": ["ns_deco_args", "@Args"],
     "scope": "typescript",
-    "body": ["@Args('$1')", "$2"]
+    "body": ["@Args('$1')", "$2"],
+    "description": "Injects a specific GraphQL argument by name into the resolver method."
   },
   "Context decorator": {
     "prefix": ["ns_deco_context", "@Context"],
     "scope": "typescript",
-    "body": ["@Context('$1')", "$2"]
+    "body": ["@Context('$1')", "$2"],
+    "description": "Injects the GraphQL execution context (or a property by key)."
   },
   "Directive decorator": {
     "prefix": ["ns_deco_directive", "@Directive"],
     "scope": "typescript",
-    "body": ["@Directive('$1')", "$2"]
+    "body": ["@Directive('$1')", "$2"],
+    "description": "Attaches a custom GraphQL directive to a field/type."
   },
   "Extensions decorator": {
     "prefix": ["ns_deco_extensions", "@Extensions"],
     "scope": "typescript",
-    "body": ["@Extensions($1)", "$2"]
+    "body": ["@Extensions($1)", "$2"],
+    "description": "Sets metadata to be read by tools (e.g., plugins) during execution."
   },
   "Field decorator": {
     "prefix": ["ns_deco_field", "@Field"],
     "scope": "typescript",
-    "body": ["@Field($1)", "$2"]
+    "body": ["@Field($1)", "$2"],
+    "description": "Marks a class property as a GraphQL field with optional type options."
   },
   "HideField decorator": {
     "prefix": ["ns_deco_hide_field", "@HideField"],
     "scope": "typescript",
-    "body": ["@HideField()", "$1"]
+    "body": ["@HideField()", "$1"],
+    "description": "Hides a field from the GraphQL schema output."
   },
   "Info decorator": {
     "prefix": ["ns_deco_info", "@Info"],
     "scope": "typescript",
-    "body": ["@Info('$1')", "$2"]
+    "body": ["@Info('$1')", "$2"],
+    "description": "Injects the GraphQL ResolveInfo object (or a property by key)."
   },
   "InputType decorator": {
     "prefix": ["ns_deco_input_type", "@InputType"],
     "scope": "typescript",
-    "body": ["@InputType()", "$1"]
+    "body": ["@InputType()", "$1"],
+    "description": "Marks a class as a GraphQL InputType."
   },
   "InterfaceType decorator": {
     "prefix": ["ns_deco_interface_type", "@InterfaceType"],
     "scope": "typescript",
-    "body": ["@InterfaceType($1)", "$2"]
+    "body": ["@InterfaceType($1)", "$2"],
+    "description": "Marks a class as a GraphQL InterfaceType."
   },
   "Mutation decorator": {
     "prefix": ["ns_deco_mutation", "@Mutation"],
     "scope": "typescript",
-    "body": ["@Mutation('$1')", "$2"]
+    "body": ["@Mutation('$1')", "$2"],
+    "description": "Declares a GraphQL mutation resolver."
   },
   "ObjectType decorator": {
     "prefix": ["ns_deco_object_type", "@ObjectType"],
     "scope": "typescript",
-    "body": ["@ObjectType($1)", "$2"]
+    "body": ["@ObjectType($1)", "$2"],
+    "description": "Marks a class as a GraphQL ObjectType."
   },
   "Query decorator": {
     "prefix": ["ns_deco_query", "@Query"],
     "scope": "typescript",
-    "body": ["@Query('$1')", "$2"]
+    "body": ["@Query('$1')", "$2"],
+    "description": "Declares a GraphQL query resolver."
   },
   "ResolveField decorator": {
     "prefix": ["ns_deco_resolve_field", "@ResolveField"],
     "scope": "typescript",
-    "body": ["@ResolveField($1)", "$2"]
+    "body": ["@ResolveField($1)", "$2"],
+    "description": "Declares a resolver for a specific field on a GraphQL type (replacement for ResolveProperty)."
   },
   "ResolveProperty decorator": {
     "prefix": ["ns_deco_resolve_property", "@ResolveProperty"],
     "scope": "typescript",
-    "body": ["@ResolveProperty($1)", "$2"]
+    "body": ["@ResolveProperty($1)", "$2"],
+    "description": "Deprecated. Use @ResolveField instead."
   },
   "ResolveReference decorator": {
     "prefix": ["ns_deco_resolve_reference", "@ResolveReference"],
     "scope": "typescript",
-    "body": ["@ResolveReference()", "$1"]
+    "body": ["@ResolveReference()", "$1"],
+    "description": "Declares a resolver for @key references in Apollo Federation."
   },
   "Resolver decorator": {
     "prefix": ["ns_deco_resolver", "@Resolver"],
     "scope": "typescript",
-    "body": ["@Resolver('$1')", "$2"]
+    "body": ["@Resolver('$1')", "$2"],
+    "description": "Marks a class as a GraphQL resolver for a type or union."
   },
   "Scalar decorator": {
     "prefix": ["ns_deco_scalar", "@Scalar"],
     "scope": "typescript",
-    "body": ["@Scalar('$1')", "$2"]
+    "body": ["@Scalar('$1')", "$2"],
+    "description": "Registers a custom GraphQL scalar type."
   },
   "Subscription decorator": {
     "prefix": ["ns_deco_subscription", "@Subscription"],
     "scope": "typescript",
-    "body": ["@Subscription('$1')", "$2"]
+    "body": ["@Subscription('$1')", "$2"],
+    "description": "Declares a GraphQL subscription resolver."
   }
 }

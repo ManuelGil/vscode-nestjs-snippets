@@ -2,11 +2,13 @@
   "register JwtModule": {
     "prefix": ["ns_jwt_module_register", "JwtModule.register"],
     "scope": "typescript",
-    "body": ["JwtModule.register({", "  secret: '${1:string}',", "  global: ${2:boolean},", "}),"]
+    "body": ["JwtModule.register({", "  secret: '${1:string}',", "  global: ${2:boolean},", "}),"],
+    "description": "Registers JwtModule with a static secret. Prefer configuration via environment variables."
   },
   "registerAsync JwtModule": {
     "prefix": ["ns_jwt_module_register_async", "JwtModule.registerAsync"],
     "scope": "typescript",
-    "body": ["JwtModule.registerAsync({", "  inject: [ConfigService],", "  global: ${2:boolean},", "  useFactory: (configService: ConfigService) => ({", "    secret: configService.get('${3:key}'),", "  }),", "}),"]
+    "body": ["JwtModule.registerAsync({", "  inject: [ConfigService],", "  global: ${1:boolean},", "  useFactory: (configService: ConfigService) => ({", "    secret: configService.get('${2:key}'),", "  }),", "}),"],
+    "description": "Registers JwtModule using ConfigService. Ensure ConfigModule is imported in the same scope."
   }
 }

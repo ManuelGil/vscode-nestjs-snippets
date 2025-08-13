@@ -2,21 +2,25 @@
   "WebSocketGateway decorator": {
     "prefix": ["ns_deco_websocket_gateway", "@WebSocketGateway"],
     "scope": "typescript",
-    "body": "@WebSocketGateway(${1:80}, { $2 })"
+    "body": "@WebSocketGateway(${1:80}, { $2 })",
+    "description": "Declares a WebSocket gateway with optional port and adapter-specific options."
   },
   "WebSocketServer decorator": {
     "prefix": ["ns_deco_websocket_server", "@WebSocketServer"],
     "scope": "typescript",
-    "body": ["@WebSocketServer()", "server: Server;"]
+    "body": ["@WebSocketServer()", "server: Server;"],
+    "description": "Injects the underlying WebSocket server instance into the gateway."
   },
   "SubscribeMessage decorator": {
     "prefix": ["ns_deco_subscribe_message", "@SubscribeMessage"],
     "scope": "typescript",
-    "body": ["@SubscribeMessage('$1')", "handleEvent(@MessageBody() data: string): string {", "  return data;", "}"]
+    "body": ["@SubscribeMessage('$1')", "handleEvent(@MessageBody() data: string): string {", "  return data;", "}"],
+    "description": "Handles an incoming message for the specified event name."
   },
   "ConnectedSocket decorator": {
     "prefix": ["ns_deco_connected_socket", "@ConnectedSocket"],
     "scope": "typescript",
-    "body": ["@ConnectedSocket() client: Socket"]
+    "body": ["@ConnectedSocket() client: Socket"],
+    "description": "Injects the connected client socket instance."
   }
 }

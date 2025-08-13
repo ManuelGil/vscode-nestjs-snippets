@@ -2,81 +2,97 @@
   "setGlobalPrefix Config": {
     "prefix": ["ns_app_set_global_prefix", "app.setGlobalPrefix"],
     "scope": "typescript",
-    "body": "app.setGlobalPrefix('${1:prefix}');"
+    "body": "app.setGlobalPrefix('${1:prefix}');",
+    "description": "Sets a global prefix for all routes. Useful for versioning or namespacing APIs."
   },
   "getGlobalPrefix Config": {
     "prefix": ["ns_app_get_global_prefix", "app.getGlobalPrefix"],
     "scope": "typescript",
-    "body": "app.getGlobalPrefix();"
+    "body": "app.getGlobalPrefix();",
+    "description": "Returns the current global prefix."
   },
   "getIoAdapter Config": {
     "prefix": ["ns_app_get_io_adapter", "app.getIoAdapter"],
     "scope": "typescript",
-    "body": "app.getIoAdapter();"
+    "body": "app.getIoAdapter();",
+    "description": "Returns the current WebSocket adapter instance."
   },
   "useGlobalPipes Config": {
     "prefix": ["ns_app_use_global_pipes", "app.useGlobalPipes"],
     "scope": "typescript",
-    "body": "app.useGlobalPipes(${1:pipes});"
+    "body": "app.useGlobalPipes(${1:pipes});",
+    "description": "Registers pipes at the application level (e.g., ValidationPipe)."
   },
   "useGlobalFilters Config": {
     "prefix": ["ns_app_use_global_filters", "app.useGlobalFilters"],
     "scope": "typescript",
-    "body": "app.useGlobalFilters(${1:filters});"
+    "body": "app.useGlobalFilters(${1:filters});",
+    "description": "Registers exception filters at the application level."
   },
   "useGlobalInterceptors Config": {
     "prefix": ["ns_app_use_global_interceptors", "app.useGlobalInterceptors"],
     "scope": "typescript",
-    "body": "app.useGlobalInterceptors(${1:interceptors});"
+    "body": "app.useGlobalInterceptors(${1:interceptors});",
+    "description": "Registers interceptors at the application level."
   },
   "useGlobalGuards Config": {
     "prefix": ["ns_app_use_global_guards", "app.useGlobalGuards"],
     "scope": "typescript",
-    "body": "app.useGlobalGuards(${1:guards});"
+    "body": "app.useGlobalGuards(${1:guards});",
+    "description": "Registers guards at the application level."
   },
   "getGlobalRequestGuards Config": {
     "prefix": ["ns_app_get_global_request_guards", "app.getGlobalRequestGuards"],
     "scope": "typescript",
-    "body": "app.getGlobalRequestGuards();"
+    "body": "app.getGlobalRequestGuards();",
+    "description": "Returns global guards that are bound to the request scope."
   },
   "getHttpAdapter Config": {
     "prefix": ["ns_app_get_http_adapter", "app.getHttpAdapter"],
     "scope": "typescript",
-    "body": "app.getHttpAdapter();"
+    "body": "app.getHttpAdapter();",
+    "description": "Returns the underlying HTTP adapter (Express/Fastify)."
   },
   "init Config": {
     "prefix": ["ns_app_init", "app.init"],
     "scope": "typescript",
-    "body": "app.init();"
+    "body": "app.init();",
+    "description": "Initializes the Nest application (without starting the HTTP server)."
   },
   "connectMicroservice Config": {
     "prefix": ["ns_app_connect_microservice", "app.connectMicroservice"],
     "scope": "typescript",
-    "body": "app.connectMicroservice<MicroserviceOptions>(${1:microserviceOptions});"
+    "body": "app.connectMicroservice<MicroserviceOptions>(${1:microserviceOptions});",
+    "description": "Connects a microservice to the application using the given options."
   },
   "getHttpServer Config": {
     "prefix": ["ns_app_get_http_server", "app.getHttpServer"],
     "scope": "typescript",
-    "body": "app.getHttpServer();"
+    "body": "app.getHttpServer();",
+    "description": "Returns the underlying HTTP server instance."
   },
   "useBodyParser Config": {
     "prefix": ["ns_app_use_body_parser", "app.useBodyParser"],
     "scope": "typescript",
-    "body": "app.useBodyParser(${1:args});"
+    "body": "app.useBodyParser(${1:args});",
+    "description": "Configures body parser options for the underlying HTTP adapter."
   },
   "enableCors Config": {
     "prefix": ["ns_app_enable_cors", "app.enableCors"],
     "scope": "typescript",
-    "body": "app.enableCors(${1:options});"
+    "body": "app.enableCors(${1:options});",
+    "description": "Enables CORS with optional configuration."
   },
   "listen Config": {
     "prefix": ["ns_app_listen", "app.listen"],
     "scope": "typescript",
-    "body": "app.listen(${1:port}, '${2:hostname}');"
+    "body": "app.listen(${1:3000}, '${2:0.0.0.0}');",
+    "description": "Starts the HTTP server. Use 'await' inside an async bootstrap function. Defaults: 3000 on 0.0.0.0."
   },
   "useWebSocketAdapter Config": {
     "prefix": ["ns_app_use_web_socket_adapter", "app.useWebSocketAdapter"],
     "scope": "typescript",
-    "body": "app.useWebSocketAdapter(${1:adapter});"
+    "body": "app.useWebSocketAdapter(${1:adapter});",
+    "description": "Sets a custom WebSocket adapter (e.g., for Fastify or custom drivers)."
   }
 }

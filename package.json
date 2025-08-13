@@ -1,8 +1,8 @@
 {
   "name": "vscode-nestjs-snippets-extension",
-  "displayName": "NestJS Snippets for VSCode Editor",
-  "description": "This extension for Visual Studio Code adds snippets for NestJS Framework in VSCode editor. Now you can create your NestJS applications even faster.",
-  "version": "1.4.0",
+  "displayName": "NestJS Snippets",
+  "description": "Fast, TypeScript-first NestJS snippets for VS Code: controllers, modules, providers, GraphQL, JWT, WebSockets, and testing with smart placeholders and scopes.",
+  "version": "1.5.0",
   "icon": "icon.png",
   "license": "MIT",
   "publisher": "imgildev",
@@ -20,35 +20,35 @@
     "Snippets"
   ],
   "keywords": [
-    "autocomplete-functionality",
-    "autocomplete",
-    "boilerplate",
-    "commands",
-    "express",
-    "extension",
-    "grammars-utility",
-    "grammars",
-    "graphql",
-    "intellisense",
-    "javascript",
-    "js",
-    "nest",
-    "nestjs-snippet",
-    "nestjs-snippets",
     "nestjs",
-    "node",
-    "nodejs",
-    "snippet",
-    "snippets-collection",
-    "snippets-collections",
-    "snippets-library",
-    "snippets-plugin",
-    "snippets",
-    "ts",
+    "nest",
+    "nestjs-snippets",
     "typescript",
-    "vscode-extension",
-    "vscode",
-    "websockets"
+    "ts",
+    "snippets",
+    "snippet",
+    "intellisense",
+    "autocomplete",
+    "decorators",
+    "controller",
+    "module",
+    "provider",
+    "pipes",
+    "guards",
+    "interceptors",
+    "exceptions",
+    "logger",
+    "config",
+    "graphql",
+    "apollo",
+    "websockets",
+    "jwt",
+    "passport",
+    "testing",
+    "jest",
+    "microservices",
+    "fastify",
+    "express"
   ],
   "homepage": "https://github.com/ManuelGil/vscode-nestjs-snippets",
   "repository": {
@@ -61,58 +61,74 @@
   "contributes": {
     "snippets": [
       {
-        "path": "./snippets/common/interfaces/exceptions.code-snippets"
+        "path": "./snippets/common/interfaces/exceptions.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/common/interfaces/features.code-snippets"
+        "path": "./snippets/common/interfaces/features.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/common/interfaces/modules.code-snippets"
+        "path": "./snippets/common/interfaces/modules.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/common/services/logger.code-snippets"
+        "path": "./snippets/common/services/logger.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/common/decorators.code-snippets"
+        "path": "./snippets/common/decorators.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/common/exceptions.code-snippets"
+        "path": "./snippets/common/exceptions.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/common/pipes.code-snippets"
+        "path": "./snippets/common/pipes.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/config/module.code-snippets"
+        "path": "./snippets/config/module.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/core/application.code-snippets"
+        "path": "./snippets/core/application.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/graphql/decorators.code-snippets"
+        "path": "./snippets/graphql/decorators.code-snippets",
+        "language": "typescript"
       },
       {
         "path": "./snippets/graphql/graphql.code-snippets"
       },
       {
-        "path": "./snippets/jwt/module.code-snippets"
+        "path": "./snippets/jwt/module.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/jwt/service.code-snippets"
+        "path": "./snippets/jwt/service.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/passport/module.code-snippets"
+        "path": "./snippets/passport/module.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/websockets/decorators.code-snippets"
+        "path": "./snippets/websockets/decorators.code-snippets",
+        "language": "typescript"
       },
       {
-        "path": "./snippets/websockets/interfaces.code-snippets"
+        "path": "./snippets/websockets/interfaces.code-snippets",
+        "language": "typescript"
       },
       {
         "path": "./snippets/custom.code-snippets"
       },
       {
-        "path": "./snippets/testing.code-snippets"
+        "path": "./snippets/testing.code-snippets",
+        "language": "typescript"
       }
     ]
   }

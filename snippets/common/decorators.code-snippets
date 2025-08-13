@@ -14,7 +14,7 @@
   "Injectable decorator": {
     "prefix": ["ns_deco_injectable", "@Injectable"],
     "scope": "typescript",
-    "body": "@Injectable({1:options})",
+    "body": "@Injectable(${1:options})",
     "description": "Decorator that marks a class as a [provider](https://docs.nestjs.com/providers). Providers can be injected into other classes via constructor parameter injection using Nest's built-in [Dependency Injection (DI)](https://docs.nestjs.com/providers#dependency-injection) system."
   },
   "Optional decorator": {
@@ -119,12 +119,7 @@
     "body": "@All('${1:path}')",
     "description": "Route handler (method) Decorator. Routes all HTTP requests to the specified path."
   },
-  "Search decorator": {
-    "prefix": ["ns_deco_search", "@Search"],
-    "scope": "typescript",
-    "body": "@Search('${1:path}')",
-    "description": "Route handler (method) Decorator. Routes all HTTP requests to the specified path."
-  },
+  
   "Request decorator": {
     "prefix": ["ns_deco_request", "@Request"],
     "scope": "typescript",
@@ -158,8 +153,8 @@
   "UploadedFile decorator": {
     "prefix": ["ns_deco_uploaded_file", "@UploadedFile"],
     "scope": "typescript",
-    "body": "@UploadedFile('${1:fileKey}', ${2:pipes})",
-    "description": "Route handler parameter decorator. Extracts the `file` object and populates the decorated parameter with the value of `file`. Used in conjunction with [multer middleware](https://github.com/expressjs/multer) for Express-based applications."
+    "body": "@UploadedFile(${1:pipes})",
+    "description": "Route handler parameter decorator. Extracts the `file` object and populates the decorated parameter with the value of `file`. Typically used with FileInterceptor('fieldName') and [multer middleware](https://github.com/expressjs/multer) for Express-based applications."
   },
   "UploadedFiles decorator": {
     "prefix": ["ns_deco_uploaded_files", "@UploadedFiles"],
@@ -195,19 +190,19 @@
     "prefix": ["ns_deco_host_param", "@HostParam"],
     "scope": "typescript",
     "body": "@HostParam('${1:property}')",
-    "description": "Route handler parameter decorator. Extracts the `hosts` property from the `req` object and populates the decorated parameter with the value of `hosts`. May also apply pipes to the bound parameter."
+    "description": "Route handler parameter decorator. Extracts a parameter from the request hostname based on host-based routing configuration."
   },
   "Req decorator": {
     "prefix": ["ns_deco_req", "@Req"],
     "scope": "typescript",
     "body": "@Req()",
-    "description": "Route handler parameter decorator. Extracts the `hosts` property from the `req` object and populates the decorated parameter with the value of `hosts`. May also apply pipes to the bound parameter."
+    "description": "Route handler parameter decorator. Injects the Request object from the underlying platform into the decorated parameter."
   },
   "Res decorator": {
     "prefix": ["ns_deco_res", "@Res"],
     "scope": "typescript",
     "body": "@Res(${1:options})",
-    "description": "Route handler parameter decorator. Extracts the `hosts` property from the `req` object and populates the decorated parameter with the value of `hosts`. May also apply pipes to the bound parameter."
+    "description": "Route handler parameter decorator. Injects the Response object. With { passthrough: true } you can set headers/status while still returning a value."
   },
   "Sse decorator": {
     "prefix": ["ns_deco_sse", "@Sse"],

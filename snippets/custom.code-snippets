@@ -22,7 +22,7 @@
   "Update Dto": {
     "prefix": ["ns_class_update_dto", "class UpdateDto"],
     "scope": "typescript",
-    "body": ["import { Create$1Dto } from './create-$2.dto';", "", "export class Update$1Dto extends PartialType(Create$1Dto) {", "  name: string;", "  age: number;", "}", ""]
+    "body": ["import { PartialType } from '@nestjs/mapped-types';", "import { Create$1Dto } from './create-$2.dto';", "", "export class Update$1Dto extends PartialType(Create$1Dto) {", "  name: string;", "  age: number;", "}", ""]
   },
   "Custom Decorator": {
     "prefix": ["ns_create_param_decorator", "createParamDecorator"],
@@ -54,9 +54,10 @@
     "scope": "typescript",
     "body": ["import { Injectable, UnauthorizedException } from '@nestjs/common';", "import { AuthGuard } from '@nestjs/passport';", "", "@Injectable()", "export class $1Guard extends AuthGuard('jwt') {", "  handleRequest(err, user, info) {", "    if (err || !user) {", "      throw err || new UnauthorizedException();", "    }", "    return user;", "  }", "}", ""]
   },
-  "Custom JwtServide": {
+  "Custom JwtService": {
     "prefix": ["ns_class_jwt_service", "class JwtService"],
     "scope": "typescript",
-    "body": ["import { Injectable, UnauthorizedException } from '@nestjs/common';", "import { JwtService } from '@nestjs/jwt';", "import { compareSync } from 'bcrypt';", "import { UsersService } from '../../users/users.service';", "import { LoginJwtDto } from './dto/login-jwt.dto';", "", "@Injectable()", "export class $1Service {", "  constructor(", "    private readonly usersService: UsersService,", "    private jwtService: JwtService,", "  ) {}", "", "  async login(loginJwtDto: LoginJwtDto): Promise<object> {", "    const { email, password } = loginJwtDto;", "", "    const user = await this.usersService.findOneBy({ email });", "", "    if (!compareSync(password, user.password)) {", "      throw new UnauthorizedException();", "    }", "", "    return await this.jwtService.sign({", "      sub: user.userId,", "    });", "  }", "}", ""]
+    "body": ["import { Injectable, UnauthorizedException } from '@nestjs/common';", "import { JwtService } from '@nestjs/jwt';", "import { compareSync } from 'bcrypt';", "import { UsersService } from '../../users/users.service';", "import { LoginJwtDto } from './dto/login-jwt.dto';", "", "@Injectable()", "export class $1Service {", "  constructor(", "    private readonly usersService: UsersService,", "    private jwtService: JwtService,", "  ) {}", "", "  async login(loginJwtDto: LoginJwtDto): Promise<{ access_token: string }> {", "    const { email, password } = loginJwtDto;", "", "    const user = await this.usersService.findOneBy({ email });", "", "    if (!compareSync(password, user.password)) {", "      throw new UnauthorizedException();", "    }", "", "    return {", "      access_token: this.jwtService.sign({", "        sub: user.userId,", "      }),", "    };", "  }", "}", ""],
+    "description": "Example auth service using JwtService to issue access tokens (no await on sign)."
   },
 }

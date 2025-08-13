@@ -2,11 +2,13 @@
   "sign JwtService": {
     "prefix": ["ns_jwt_service_sign", "JwtService.sign"],
     "scope": "typescript",
-    "body": "await this.jwtService.sign(${1:payload}, ${2:options});"
+    "body": "this.jwtService.sign(${1:payload}, ${2:options});",
+    "description": "Synchronously signs a JWT with the given payload and options. Returns a token string."
   },
   "signAsync JwtService": {
     "prefix": ["ns_jwt_service_sign_async", "JwtService.signAsync"],
     "scope": "typescript",
-    "body": "await this.jwtService.signAsync(${1:payload}, ${2:options});"
+    "body": "await this.jwtService.signAsync(${1:payload}, ${2:options});",
+    "description": "Asynchronously signs a JWT with the given payload and options. Returns a Promise that resolves to a token string."
   }
 }
